@@ -15,6 +15,7 @@ https://github.com/adi1090x/rofi
 - lxapperance
 - ePapirus and Papirus White Icons
 - GTK Graphite Dark Theme
+- Thunar
 - spotify-launcher
 - polybar-spotify-module made by @Mihirlad55
 - rofi
