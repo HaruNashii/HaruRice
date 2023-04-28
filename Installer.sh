@@ -29,7 +29,7 @@ echo I3 CONFIG SUCCESSFULLY INSTALLED
 mkdir /etc/polybar/backup
 mv -f /etc/polybar/config.ini /etc/polybar/backup/
 mv -f ./polybar-config/config.ini /etc/polybar/config
-ECHO POLYBAR CONFIG SUCCESSFULLY INSTALLED
+echo POLYBAR CONFIG SUCCESSFULLY INSTALLED
 
 
 
