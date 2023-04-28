@@ -22,11 +22,11 @@ https://github.com/adi1090x/rofi
 
 #Installation
 
-Open the terminal and run this command
+**Open the terminal and run this command**
 
-$ git clone https://github.com/HaruNashii/Dotfiles.git
-$ cd Dotfiles
-$ sudo chmod -x Installation.sh
-$ ./Installation.sh
+```git clone https://github.com/HaruNashii/Dotfiles.git```
+```cd Dotfiles```
+```sudo chmod -x Installation.sh```
+```./Installation.sh```
 
 
