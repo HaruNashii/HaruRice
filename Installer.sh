@@ -61,7 +61,7 @@ else
 mkdir ~/.icons
 mf -f ./ePapirus-Dark ~/.icons
 mv -f ./Papirus-Dark ~/.icons
-
+fi
 
 
 # EXIT THE TERMINAL WHEN THE SCRIPT IS FINISH
