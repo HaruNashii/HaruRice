@@ -7,26 +7,29 @@ https://github.com/mihirlad55/polybar-spotify-module
 https://github.com/adi1090x/rofi
 
 
-#This Rice will install
+# This Rice will install
 
--i3-wm
--polybar
--lxapperance
--ePapirus and Papirus White Icons
--GTK Graphite Dark Theme
--spotify-launcher
--polybar-spotify-module made by @Mihirlad55
--rofi
--rofi themes and config made by @adi1090x
--nitrogen
+- i3-wm
+- polybar
+- lxapperance
+- ePapirus and Papirus White Icons
+- GTK Graphite Dark Theme
+- spotify-launcher
+- polybar-spotify-module made by @Mihirlad55
+- rofi
+- rofi themes and config made by @adi1090x
+- nitrogen
 
-#Installation
+# Installation
 
 **Open the terminal and run this command**
 
 ```git clone https://github.com/HaruNashii/Dotfiles.git```
+
 ```cd Dotfiles```
+
 ```sudo chmod -x Installation.sh```
+
 ```./Installation.sh```
 
 
