@@ -24,9 +24,10 @@ https://github.com/adi1090x/rofi
 
 **Open the terminal and run this command**
 
-```git clone https://github.com/HaruNashii/Dotfiles.git```
 
-```cd Dotfiles```
+```git clone https://github.com/HaruNashii/HaruRice.git```
+
+```cd Harurice```
 
 ```sudo chmod -x Installation.sh```
 
