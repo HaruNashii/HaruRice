@@ -26,7 +26,8 @@ https://github.com/adi1090x/rofi
 # requirements
 
 you will need just the GIT
-yo can unstall it wirh
+you can install it with
+
 ```sudo pacman -S git```
 
 
