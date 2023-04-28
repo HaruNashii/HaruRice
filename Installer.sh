@@ -1,7 +1,7 @@
 
 # THIS INSTALL ALL THE APPS THAT IS CONFIGURED ON I3, POLYBAR AND IN THE RICE PHOTOS 
 sudo pacman -Sy
-sudo pacman -S picom gnome-terminal thunar polybar nitrogen
+sudo pacman -S picom gnome-terminal thunar polybar nitrogen spotify-launcher
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
 echo RICES APPS AND COMMANDS SUCCESSFULLY DOWNLOADED
