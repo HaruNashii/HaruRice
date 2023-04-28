@@ -42,8 +42,8 @@ you can install it with
 
 ```cd Harurice```
 
-```sudo chmod +x Installation.sh```
+```sudo chmod +x Installer.sh```
 
-```./Installation.sh```
+```./Installer.sh```
 
 
