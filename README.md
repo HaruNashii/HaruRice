@@ -25,8 +25,8 @@ https://github.com/adi1090x/rofi
 
 # requirements
 
-you will need just the GIT
-you can install it with
+you will need the GIT
+you can install it with :
 
 ```sudo pacman -S git```
 
