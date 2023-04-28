@@ -1,10 +1,10 @@
 # THIS SCRIPT USE THE SPOTIFY MODULES 
-#MADE BY @Mihirlad55 / Mihir lad
+# MADE BY @Mihirlad55 / Mihir lad
 
 https://github.com/mihirlad55/polybar-spotify-module
 
 # THE ROFI THEME AND CONFIG 
-#MADE BY @adi1090x / Aditya Shakya
+# MADE BY @adi1090x / Aditya Shakya
 
 https://github.com/adi1090x/rofi
 
