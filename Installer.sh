@@ -1,5 +1,5 @@
 
-# This install all the apps that is configured on the i3 config and that is in the rice
+# THIS INSTALL ALL THE APPS THAT IS CONFIGURED ON I3, POLYBAR AND IN THE RICE PHOTOS 
 sudo pacman -Sy
 sudo pacman -S picom gnome-terminal thunar polybar nitrogen
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
