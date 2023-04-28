@@ -10,6 +10,7 @@ https://github.com/adi1090x/rofi
 # This Rice will install
 
 - i3-wm
+- picom
 - polybar
 - lxapperance
 - ePapirus and Papirus White Icons
