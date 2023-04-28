@@ -7,7 +7,7 @@ sudo chmod a+rx /usr/local/bin/unimatrix
 echo RICES APPS AND COMMANDS SUCCESSFULLY DOWNLOADED
 
 
-# INSTALL THE ROFI CONFIGURATION
+# MAKE A BACKUP OF YOUR OLD ROFI CONFIG AND INSTALL THE RICE ONE
 mkdir ~/.config/rofibackup
 mv -f ~/.config/rofi ~/.config/rofibackup
 mv -f ./rofi ~/.config/ 
