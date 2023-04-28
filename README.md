@@ -20,4 +20,13 @@ https://github.com/adi1090x/rofi
 -rofi themes and config made by @adi1090x
 -nitrogen
 
+#Installation
+
+Open the terminal and run this command
+
+$ git clone https://github.com/HaruNashii/Dotfiles.git
+$ cd Dotfiles
+$ sudo chmod -x Installation.sh
+$ ./Installation.sh
+
 
