@@ -4,7 +4,7 @@ sudo pacman -Sy
 sudo pacman -S picom gnome-terminal thunar polybar nitrogen
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
-echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
+echo RICES APPS AND COMMANDS SUCCESSFULLY DOWNLOADED
 
 
 # INSTALL THE ROFI CONFIGURATION
@@ -13,7 +13,7 @@ mv -f ~/.config/rofi ~/.config/rofibackup
 mv -f ./rofi ~/.config/ 
 cp -rf ./fonts/* ~/.local/share/fonts
 fc-cache
-echo FONT SUCESSFULY DOWNLOADED
+echo FONT SUCCESSFULLY INSTALLED
 
 
 
@@ -21,7 +21,7 @@ echo FONT SUCESSFULY DOWNLOADED
 mkdir ~/.config/i3/backup
 mv -f ~/.config/i3/config ~/.config/i3/backup/
 mv -f ./i3-config/config ~/.config/i3/
-echo I3 CONFIG SUCESSFULY INSTALLED
+echo I3 CONFIG SUCCESSFULLY INSTALLED
 
 
 
@@ -29,7 +29,7 @@ echo I3 CONFIG SUCESSFULY INSTALLED
 mkdir /etc/polybar/backup
 mv -f /etc/polybar/config.ini /etc/polybar/backup/
 mv -f ./polybar-config/config.ini /etc/polybar/config
-ECHO POLYBAR CONFIG SUCESSFULY INSTALLED
+ECHO POLYBAR CONFIG SUCCESSFULLY INSTALLED
 
 
 
