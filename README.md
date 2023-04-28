@@ -11,7 +11,6 @@ https://github.com/adi1090x/rofi
 
 # This Rice will install
 
-- i3-wm
 - picom
 - polybar
 - lxapperance
@@ -23,6 +22,15 @@ https://github.com/adi1090x/rofi
 - rofi
 - rofi themes and config made by @adi1090x
 - nitrogen
+
+# requirements
+
+you will need just the GIT
+yo can unstall it wirh
+```sudo pacman -S git```
+
+
+
 
 # Installation
 
