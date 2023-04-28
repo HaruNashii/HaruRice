@@ -1,4 +1,4 @@
-# THIS SCRIPT USE THE SPOTIFY MODULES MADE BY @Mihirlad55 /Mihir lad
+# THIS SCRIPT USE THE SPOTIFY MODULES MADE BY @Mihirlad55 / Mihir lad
 
 https://github.com/mihirlad55/polybar-spotify-module
 
