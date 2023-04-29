@@ -56,17 +56,16 @@ exec spotify-launcher
 #=====================*WINDOW MANEGAMENT "START"*======================#
 
 # open the i3 config file
-bindsym F3 exec gnome-terminal -e "nano /home/notharu/.config/i3/config"
+bindsym F3 exec gnome-terminal -e "nano ~/.config/i3/config"
 
 # open the PolyBar config file
 bindsym F4 exec gnome-terminal -e "nano /etc/polybar/config.ini"
 
+# add gaps between the borders
+gaps inner 10
+
 # hide the title bar
 #for_window [class=".*"] border none
-
-# minimize one app
-bindsym $mod+r move scratchpad
-bindsym $mod+Shift+r scratchpad show
 
 # make a window move when other window overlap them
 smart_borders on
@@ -135,9 +134,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 #-----*numpad system "START"*-----#
 
-#made all windows open in floating mode
-for_window [class=".*"] floating enable, resize set 800 600, move position center
-
 # UP
 bindsym KP_Up move window to position 0 30; resize set 1355 346
 
@@ -179,10 +175,10 @@ bindsym KP_Page_Up move window to position 680 30; resize set 675 346
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #ffffff #ffffff #ffffff #ffffff   #ffffff
-client.focused_inactive #472a31 #000000 #000000 #ffffff   #000000
-client.unfocused        #472a31 #000000 #000000 #ffffff   #000000
-client.urgent           #472a31 #000000 #000000 #ffffff   #000000
-client.placeholder      #472a31 #000000 #000000 #000000   #000000
+client.focused_inactive #909090 #000000 #000000 #ffffff   #000000
+client.unfocused        #909090 #000000 #000000 #ffffff   #000000
+client.urgent           #909090 #000000 #000000 #ffffff   #000000
+client.placeholder      #909090 #000000 #000000 #000000   #000000
 
 client.background       #000000
      
@@ -225,7 +221,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # start the network applet drivers
 exec --no-startup-id nm-applet
 
-# configure the pulseaudio driver on startup
+# configure the pulseaudio driver on i3status on the startup
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
