@@ -2,20 +2,17 @@
 
 
 
+# Credits
 
 
-
-
-
-
-
-# THIS SCRIPT USE THE SPOTIFY MODULES 
-# MADE BY @Mihirlad55 / Mihir lad
+**This Script Uses the Polybar-Spotify-Module made by
+ @Mihirlad55 / Mihir lad**
 
 https://github.com/mihirlad55/polybar-spotify-module
 
-# AND THE ROFI THEME AND CONFIG 
-# MADE BY @adi1090x / Aditya Shakya
+
+**This Script also use the rofi theme and config made by
+ @adi1090x / Aditya Shakya**
 
 https://github.com/adi1090x/rofi
 
@@ -34,7 +31,7 @@ https://github.com/adi1090x/rofi
 - rofi themes and config made by @adi1090x
 - nitrogen
 
-# requirements
+# Requirements
 
 **you will need the GIT**
 **you can install it with**
