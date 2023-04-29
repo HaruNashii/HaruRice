@@ -90,7 +90,7 @@ echo I3 CONFIG SUCESSFULY INSTALLED
 if [ -d "/etc/polybar/" ]; then
 sudo mkdir /etc/polybar/backup
 sudo mv -f /etc/polybar/config.ini /etc/polybar/backup/
-sudo cp -f ./polybar-config/config.ini /etc/polybar/config
+sudo cp -f ./polybar-config/config.ini /etc/polybar/
 else
 sudo cp -f ./polybar-config/config.ini /etc/polybar/
 fi
