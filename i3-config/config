@@ -34,6 +34,7 @@ bindsym $mod+f exec ~/.config/rofi/launcher.sh
 # start a polybar on startup
 exec polybar
 
+# start a picom for enable transparency in the terminal and compatibility with the gaps on between windows
 exec picom --config ~/.config/picom/picom.conf
 
 # start a discord on startup
@@ -220,7 +221,7 @@ set $ws10 "10"
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # start the network applet drivers
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # configure the pulseaudio driver on i3status on the startup
 set $refresh_i3status killall -SIGUSR1 i3status
