@@ -51,7 +51,7 @@ https://github.com/adi1090x/rofi
 
 ```git clone https://github.com/HaruNashii/HaruRice.git```
 
-```cd Harurice```
+```cd HaruRice```
 
 ```sudo chmod +x Installer.sh```
 
