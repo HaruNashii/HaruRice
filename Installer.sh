@@ -2,7 +2,7 @@
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
 clear
-sudo pacman -S picom thunar polybar nitrogen spotify-launcher lxappearance
+sudo pacman -S picom thunar polybar nitrogen spotify-launcher lxappearance gnome-screenshot
 
 clear
 echo PACKAGE IS SYNCHRONIZED 
