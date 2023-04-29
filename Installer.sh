@@ -6,11 +6,7 @@ sudo pacman -S picom gnome-terminal thunar polybar nitrogen spotify-launcher lxa
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
 
-cd ~/HaruRice
-cd ./gnome-terminal-transparency
-makepkg
-sudo pacman -U gnome-terminal-transparency-3.46.8-1-x86_64.pkg.tar.zst
-cd ~/HaruRice
+
 
 cd ./tty-clock
 make
@@ -105,7 +101,6 @@ echo THEMES SUCESSFULY INSTALLED
 
 
 
-
 # INSTALL THE ICONS PACKS
 if [ -d "~/.icons" ]; then
 sudo cp -f ./ePapirus-Dark ~/.icons
@@ -123,6 +118,9 @@ i3-msg restart
 polybar-msg cmd restart
 echo I3 AND POLYBAR SUCESSFULY RESTARTED
 
-# EXIT THE TERMINAL WHEN THE SCRIPT IS FINISH
-clear
-exit
+# INSTALL THE GNOME-TERMINAL-TRANSPARENCY
+cd ~/HaruRice
+cd ./gnome-terminal-transparency
+makepkg
+sudo pacman -U gnome-terminal-transparency-3.46.8-1-x86_64.pkg.tar.zst
+cd ~/HaruRice
