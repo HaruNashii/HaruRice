@@ -17,7 +17,7 @@ else
 cd ./tty-clock/
 make
 sudo make install
-cd ~/HaruRice/
+cd $HOME/HaruRice/
 fi
 
 
@@ -25,48 +25,48 @@ cd ./polybar-spotify-module/src/
 sudo make install
 systemctl --user enable spotify-listener
 systemctl --user start spotify-listener
-cd ~/HaruRice/
+cd $HOME/HaruRice/
 echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
 
 
 
 # INSTALL THE ROFI CONFIGURATION
-if [ -d "~/.config/rofi" ]; then
-sudo mkdir ~/.config/rofibackup
-sudo mv -f ~/.config/rofi ~/.config/rofibackup/
-sudo cp -f ./rofi ~/.config/ 
+if [ -d "$HOME/.config/rofi/" ]; then
+sudo mkdir $HOME/.config/rofibackup/
+sudo mv -f $HOME/.config/rofi/ $HOME/.config/rofibackup/
+sudo cp -f ./rofi $HOME/.config/ 
 else
-sudo cp -f ./rofi ~/.config/ 
+sudo cp -f ./rofi $HOME/.config/ 
 fi
 
 # INSTALL THE PICOM CONFIGURATION
-if [ -d "~/.config/picom/" ]; then
-sudo mkdir ~/.config/picom/backup/
-sudo mv -f ~/.config/picom/picom.conf ~/.config/picom/backup/
-sudo cp -f ./picom-config/picom.conf ~/.config/picom/
+if [ -d "$HOME/.config/picom/" ]; then
+sudo mkdir $HOME/.config/picom/backup/
+sudo mv -f $HOME/.config/picom/picom.conf $HOME/.config/picom/backup/
+sudo cp -f ./picom-config/picom.conf $HOME/.config/picom/
 else
-sudo mkdir ~/.config/picom/
-sudo cp -f ./picom-config/picom.conf ~/.config/picom/
+sudo mkdir $HOME/.config/picom/
+sudo cp -f ./picom-config/picom.conf $HOME/.config/picom/
 fi
 
 
 
 # INSTALL THE FONTS AND UPDATE THEN IN THE SYSTEM
-if [ -d "~/.local/share/fonts/Google Fonts/" ]; then
-sudo cp -f ./fonts/GrapeNuts-Regular.ttf ~/.local/share/fonts/
-sudo cp -f ./fonts/Icomoon-Feather.ttf ~/.local/share/fonts/
-sudo cp -f ./fonts/losevka-Nerd-Font-Complete.ttf ~/.local/share/fonts/
-sudo cp -f ./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf ~/.local/share/fonts/
-sudo mkdir ~/.local/share/fonts/Google Fonts/Kiwi Maru/
-sudo cp -f ./fonts/Kiwi_Maru_Regular.14.ttf ~/.local/share/fonts/Google Fonts/Kiwi Maru/
+if [ -d "$HOME/.local/share/fonts/Google Fonts/" ]; then
+sudo cp -f ./fonts/GrapeNuts-Regular.ttf $HOME/.local/share/fonts/
+sudo cp -f ./fonts/Icomoon-Feather.ttf $HOME/.local/share/fonts/
+sudo cp -f ./fonts/losevka-Nerd-Font-Complete.ttf $HOME/.local/share/fonts/
+sudo cp -f ./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf $HOME/.local/share/fonts/
+sudo mkdir $HOME/.local/share/fonts/Google Fonts/Kiwi Maru/
+sudo cp -f ./fonts/Kiwi_Maru_Regular.14.ttf $HOME/.local/share/fonts/Google Fonts/Kiwi Maru/
 else
-sudo cp -f ./fonts/GrapeNuts-Regular.ttf ~/.local/share/fonts/
-sudo cp -f ./fonts/Icomoon-Feather.ttf ~/.local/share/fonts/
-sudo cp -f ./fonts/losevka-Nerd-Font-Complete.ttf ~/.local/share/fonts/
-sudo cp -f ./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf ~/.local/share/fonts/
-sudo mkdir ~/.local/share/fonts/Google Fonts/
-sudo mkdir ~/.local/share/fonts/Google Fonts/Kiwi Maru/
-sudo cp -f ./fonts/Kiwi_Maru_Regular.14.ttf ~/.local/share/fonts/Google Fonts/Kimi Maru/
+sudo cp -f ./fonts/GrapeNuts-Regular.ttf $HOME/.local/share/fonts/
+sudo cp -f ./fonts/Icomoon-Feather.ttf $HOME/.local/share/fonts/
+sudo cp -f ./fonts/losevka-Nerd-Font-Complete.ttf $HOME/.local/share/fonts/
+sudo cp -f ./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf $HOME/.local/share/fonts/
+sudo mkdir $HOME/.local/share/fonts/Google Fonts/
+sudo mkdir $HOME/.local/share/fonts/Google Fonts/Kiwi Maru/
+sudo cp -f ./fonts/Kiwi_Maru_Regular.14.ttf $HOME/.local/share/fonts/Google Fonts/Kimi Maru/
 fi
 sudo fc-cache
 echo FONT SUCESSFULY DOWNLOADED
@@ -74,13 +74,13 @@ echo FONT SUCESSFULY DOWNLOADED
 
 
 # MAKE A BACKUP OF YOUR OLD I3 CONFIG AND ACTIVE THE RICE ONE
-if [ -d "~/.config/i3" ]; then
-sudo mkdir ~/.config/i3/backup
-sudo mv -f ~/.config/i3/config ~/.config/i3/backup/
-sudo cp -f ./i3-config/config ~/.config/i3/
+if [ -d "$HOME/.config/i3" ]; then
+sudo mkdir $HOME/.config/i3/backup
+sudo mv -f $HOME/.config/i3/config $HOME/.config/i3/backup/
+sudo cp -f ./i3-config/config $HOME/.config/i3/
 else
-sudo mkdir ~/.config/i3
-sudo cp -f ./i3-config/config ~/.config/i3
+sudo mkdir $HOME/.config/i3
+sudo cp -f ./i3-config/config $HOME/.config/i3
 fi
 echo I3 CONFIG SUCESSFULY INSTALLED
 
@@ -99,11 +99,11 @@ ECHO POLYBAR CONFIG SUCESSFULY INSTALLED
 
 
 # INSTALL THE THEMES
-if [ -d "~/.themes" ]; then
-sudo cp -f ./Graphite-Dark ~/.themes
+if [ -d "$HOME/.themes" ]; then
+sudo cp -f ./Graphite-Dark $HOME/.themes
 else
-sudo mkdir ~/.themes
-sudo cp -f ./Graphite-Dark ~/.themes
+sudo mkdir $HOME/.themes
+sudo cp -f ./Graphite-Dark $HOME/.themes
 fi
 echo THEMES SUCESSFULY INSTALLED
 
@@ -115,8 +115,8 @@ polybar-msg cmd restart
 echo I3 AND POLYBAR SUCESSFULY RESTARTED
 
 # INSTALL THE GNOME-TERMINAL-TRANSPARENCY
-cd ~/HaruRice
+cd $HOME/HaruRice
 cd ./gnome-terminal-transparency
 makepkg
 sudo pacman -U gnome-terminal-transparency-3.46.8-1-x86_64.pkg.tar.zst
-cd ~/HaruRice
+cd $HOME/HaruRice
