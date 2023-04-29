@@ -30,7 +30,7 @@ bindsym $mod+i exec discord
 bindsym $mod+g exec spotifyctl; spotify-listener; spotify-launcher
 
 # start a rofi app launcher
-bindsym $mod+f exec rofi -show run
+bindsym $mod+f exec ~/.config/rofi/launcher.sh
 
 # start a polybar on startup
 exec polybar
