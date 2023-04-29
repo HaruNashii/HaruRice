@@ -109,18 +109,6 @@ echo THEMES SUCESSFULY INSTALLED
 
 
 
-# INSTALL THE ICONS PACKS
-if [ -d "~/.icons" ]; then
-sudo cp -f ./ePapirus-Dark ~/.icons
-sudo cp -f ./Papirus-Dark ~/.icons
-else
-sudo mkdir ~/.icons
-sudo cp -f ./ePapirus-Dark ~/.icons
-sudo cp -f ./Papirus-Dark ~/.icons
-fi
-echo ICONS PACK SUCESSFULY INSTALLED
-
-
 # RELOAD THE POLYBAR AND THE I3 TO USED THE NEW CONFIG
 i3-msg restart
 polybar-msg cmd restart
