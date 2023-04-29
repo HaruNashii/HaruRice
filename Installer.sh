@@ -166,7 +166,7 @@ chmod -R a+rw $HOME/.config/polybar/
 chmod -R a+rw $HOME/.config/polybar/backup/
 else
 sudo cp -f ./polybar-config/config.ini /etc/polybar/config.ini
-chmod -R a+rw $HOME/.config/polybar/
+chmod -R a+rw /etc/polybar/
 fi
 
 clear
