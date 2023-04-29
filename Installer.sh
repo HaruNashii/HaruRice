@@ -33,7 +33,7 @@ echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
 # INSTALL THE ROFI CONFIGURATION
 if [ -d "~/.config/rofi" ]; then
 sudo mkdir ~/.config/rofibackup
-sudo cp -f ~/.config/rofi ~/.config/rofibackup/
+sudo mv -f ~/.config/rofi ~/.config/rofibackup/
 sudo cp -f ./rofi ~/.config/ 
 else
 sudo cp -f ./rofi ~/.config/ 
@@ -42,7 +42,7 @@ fi
 # INSTALL THE PICOM CONFIGURATION
 if [ -d "~/.config/picom/" ]; then
 sudo mkdir ~/.config/picom/backup/
-sudo cp -f ~/.config/picom/picom.conf ~/.config/picom/backup/
+sudo mv -f ~/.config/picom/picom.conf ~/.config/picom/backup/
 sudo cp -f ./picom-config/picom.conf ~/.config/picom/
 else
 sudo mkdir ~/.config/picom/
@@ -76,7 +76,7 @@ echo FONT SUCESSFULY DOWNLOADED
 # MAKE A BACKUP OF YOUR OLD I3 CONFIG AND ACTIVE THE RICE ONE
 if [ -d "~/.config/i3" ]; then
 sudo mkdir ~/.config/i3/backup
-sudo cp -f ~/.config/i3/config ~/.config/i3/backup/
+sudo mv -f ~/.config/i3/config ~/.config/i3/backup/
 sudo cp -f ./i3-config/config ~/.config/i3/
 else
 sudo mkdir ~/mkdir ~/.config/i3
@@ -89,7 +89,7 @@ echo I3 CONFIG SUCESSFULY INSTALLED
 # MAKE A BACKUP OF YOUR OLD POLYBAR CONFIG AND ACTIVE THE RICE ONE
 if [ -d "/etc/polybar/" ]; then
 sudo mkdir /etc/polybar/backup
-sudo cp -f /etc/polybar/config.ini /etc/polybar/backup/
+sudo mv -f /etc/polybar/config.ini /etc/polybar/backup/
 sudo cp -f ./polybar-config/config.ini /etc/polybar/config
 else
 sudo cp -f ./polybar-config/config.ini /etc/polybar/
