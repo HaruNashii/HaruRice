@@ -41,7 +41,7 @@ https://github.com/xorg62/tty-clock
 - lxapperance
 - GTK Graphite Dark Theme
 - Thunar
-- spotify-launcher
+- spotify
 - polybar-spotify-module made by @Mihirlad55
 - rofi
 - rofi themes and config made by @adi1090x
@@ -59,10 +59,10 @@ https://github.com/xorg62/tty-clock
 # Requirements
 
 **you will need to use the "systemd" i your don't use you can easily modify the script to work**
-**you will need the "GIT" "base-devel" "dbus" to clone the repository and compile the tyy-clock"**
+**you will need the "GIT" "base-devel" "dbus" " "flatpak" to clone the repository and compile the tyy-clock"**
 **you can install it with the following command in your terminal**
 
-```sudo pacman -S git base-devel dbus```
+```sudo pacman -S git base-devel dbus flatpak```
 
 
 
