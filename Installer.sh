@@ -3,15 +3,23 @@
 sudo pacman -Sy
 sudo pacman -S picom thunar polybar nitrogen spotify-launcher lxappearance
 
+
+if [ -x "/usr/local/bin/unimatrix" ]; then
+echo UNIMATRIX ALREADY DOWNLOADED
+else
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
+fi
 
-
-
+if [ -x "/usr/local/bin/tty-clock" ]; then
+echo TTY-CLOCK ALREADY DOWNLOADED
+else
 cd ./tty-clock
 make
 sudo make install
 cd ~/HaruRice
+fi
+
 
 cd ./polybar-spotify-module/src/
 sudo make install
