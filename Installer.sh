@@ -36,10 +36,13 @@ sudo mkdir $HOME/.config/rofibackup/
 sudo mv -f $HOME/.config/rofi/ $HOME/.config/rofibackup/
 sudo cp -f ./rofi $HOME/.config/ 
 sudo chmod +x cd $HOME/.config/rofi/launcher.sh
+chmod -R a+rw $HOME/.config/rofi/
+chmod -R a+rw $HOME/.config/rofibackup/
 cd $HOME
 else
 sudo cp -f ./rofi $HOME/.config/ 
 sudo chmod +x cd $HOME/.config/rofi/launcher.sh
+chmod -R a+rw $HOME/.config/rofi/
 cd $HOME
 fi
 
@@ -48,9 +51,12 @@ if [ -d "$HOME/.config/picom/" ]; then
 sudo mkdir $HOME/.config/picom/backup/
 sudo mv -f $HOME/.config/picom/picom.conf $HOME/.config/picom/backup/
 sudo cp -f ./picom-config/picom.conf $HOME/.config/picom/
+chmod -R a+rw $HOME/.config/picom/
+chmod -R a+rw $HOME/.config/picom/backup/
 else
 sudo mkdir $HOME/.config/picom/
 sudo cp -f ./picom-config/picom.conf $HOME/.config/picom/
+chmod -R a+rw $HOME/.config/picom/
 fi
 
 
@@ -82,9 +88,12 @@ if [ -d "$HOME/.config/i3" ]; then
 sudo mkdir $HOME/.config/i3/backup
 sudo mv -f $HOME/.config/i3/config $HOME/.config/i3/backup/
 sudo cp -f ./i3-config/config $HOME/.config/i3/
+chmod -R a+rw $HOME/.config/i3/
+chmod -R a+rw $HOME/.config/i3/backup/
 else
 sudo mkdir $HOME/.config/i3
 sudo cp -f ./i3-config/config $HOME/.config/i3
+chmod -R a+rw $HOME/.config/i3/
 fi
 echo I3 CONFIG SUCESSFULY INSTALLED
 
@@ -95,8 +104,11 @@ if [ -d "/etc/polybar/" ]; then
 sudo mkdir /etc/polybar/backup
 sudo mv -f /etc/polybar/config.ini /etc/polybar/backup/
 sudo cp -f ./polybar-config/config.ini /etc/polybar/
+chmod -R a+rw $HOME/.config/polybar/
+chmod -R a+rw $HOME/.config/polybar/backup/
 else
 sudo cp -f ./polybar-config/config.ini /etc/polybar/
+chmod -R a+rw $HOME/.config/polybar/
 fi
 ECHO POLYBAR CONFIG SUCESSFULY INSTALLED
 
@@ -105,9 +117,11 @@ ECHO POLYBAR CONFIG SUCESSFULY INSTALLED
 # INSTALL THE THEMES
 if [ -d "$HOME/.themes" ]; then
 sudo cp -f ./Graphite-Dark $HOME/.themes
+chmod -R a+rw $HOME/.themes/
 else
 sudo mkdir $HOME/.themes
 sudo cp -f ./Graphite-Dark $HOME/.themes
+chmod -R a+rw $HOME/.themes/
 fi
 echo THEMES SUCESSFULY INSTALLED
 
