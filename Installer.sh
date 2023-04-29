@@ -35,8 +35,12 @@ if [ -d "$HOME/.config/rofi/" ]; then
 sudo mkdir $HOME/.config/rofibackup/
 sudo mv -f $HOME/.config/rofi/ $HOME/.config/rofibackup/
 sudo cp -f ./rofi $HOME/.config/ 
+sudo chmod +x cd $HOME/.config/rofi/launcher.sh
+cd $HOME
 else
 sudo cp -f ./rofi $HOME/.config/ 
+sudo chmod +x cd $HOME/.config/rofi/launcher.sh
+cd $HOME
 fi
 
 # INSTALL THE PICOM CONFIGURATION
