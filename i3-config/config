@@ -29,7 +29,7 @@ bindsym $mod+u exec thunar
 bindsym $mod+i exec discord
 
 # start a spotify and the polybar configs for spotify
-bindsym $mod+g exec spotifyctl; exec spotify-listener; exec spotify-launcher
+bindsym $mod+g exec spotifyctl; exec spotify-listener; exec com.spotify.Client
 
 # start a rofi app launcher
 bindsym $mod+f exec ~/.config/rofi/launcher.sh
