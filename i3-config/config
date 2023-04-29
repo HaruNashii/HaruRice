@@ -13,7 +13,6 @@
 
 #==================*APPLICATIONS MANEGAMENT "START"*===================#
 
-
 # start a terminal
 bindsym $mod+t  exec gnome-terminal
 
@@ -34,6 +33,8 @@ bindsym $mod+f exec ~/.config/rofi/launcher.sh
 
 # start a polybar on startup
 exec polybar
+
+exec picom --config ~/.config/picom/picom.conf
 
 # start a discord on startup
 exec discord
