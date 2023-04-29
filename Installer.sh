@@ -14,10 +14,10 @@ fi
 if [ -x "/usr/local/bin/tty-clock" ]; then
 echo TTY-CLOCK ALREADY DOWNLOADED
 else
-cd ./tty-clock
+cd ./tty-clock/
 make
 sudo make install
-cd ~/HaruRice
+cd ~/HaruRice/
 fi
 
 
@@ -25,7 +25,7 @@ cd ./polybar-spotify-module/src/
 sudo make install
 systemctl --user enable spotify-listener
 systemctl --user start spotify-listener
-cd ~/HaruRice
+cd ~/HaruRice/
 echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
 
 
@@ -33,7 +33,7 @@ echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
 # INSTALL THE ROFI CONFIGURATION
 if [ -d "~/.config/rofi" ]; then
 sudo mkdir ~/.config/rofibackup
-sudo cp -f ~/.config/rofi ~/.config/rofibackup
+sudo cp -f ~/.config/rofi ~/.config/rofibackup/
 sudo cp -f ./rofi ~/.config/ 
 else
 sudo cp -f ./rofi ~/.config/ 
