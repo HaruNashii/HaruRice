@@ -50,8 +50,7 @@ exec nitrogen --restore
 
 # start a spotify on startup
 exec spotifyctl
-exec spotify-listener
-exec spotify-launcher
+exec com.spotify.Client
 
 #===================*APPLICATIONS MANEGAMENT "END"*====================#
 #/                                                                    \#
