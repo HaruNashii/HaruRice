@@ -32,6 +32,7 @@ https://github.com/xorg62/tty-clock
 
 - picom
 - gnome-terminal-transparency
+- gnome-screenshot
 - tyy-clock made by @xorg62
 - unimatrix
 - fonts (GrapeNuts, Kiwi Maru, Icomoon-Feather, losevka-Nerd, JetBrains-Mono-Nerd.)
