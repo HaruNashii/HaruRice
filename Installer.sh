@@ -79,7 +79,7 @@ sudo mkdir ~/.config/i3/backup
 sudo mv -f ~/.config/i3/config ~/.config/i3/backup/
 sudo cp -f ./i3-config/config ~/.config/i3/
 else
-sudo mkdir ~/mkdir ~/.config/i3
+sudo mkdir ~/.config/i3
 sudo cp -f ./i3-config/config ~/.config/i3
 fi
 echo I3 CONFIG SUCESSFULY INSTALLED
