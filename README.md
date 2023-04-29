@@ -1,6 +1,9 @@
 # THIS SCRIPT IS UNDER DEVELOPMENT PLEASE DON'T RUN NOTHING THIS MAY BREAK YOUR SYSTEM CONFIGURATION
 
+- **ePapirus and Papirus White Icons
+WILL NOT BE INSTALLED BECAUSE IS TO MANY ARCHIVE HOW CAN GET THE THEME BY HERE**
 
+```https://www.gnome-look.org/p/1166289/```
 
 # Credits
 
@@ -35,7 +38,6 @@ https://github.com/xorg62/tty-clock
 - base-devel
 - polybar
 - lxapperance
-- ePapirus and Papirus White Icons
 - GTK Graphite Dark Theme
 - Thunar
 - spotify-launcher
