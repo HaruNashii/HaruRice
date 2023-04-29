@@ -13,6 +13,9 @@
 
 #==================*APPLICATIONS MANEGAMENT "START"*===================#
 
+# start a screenshot app
+bindsym $mod+Print exec /usr/share/applications/org.gnome.Screenshot.desktop
+
 # start a terminal
 bindsym $mod+t  exec gnome-terminal
 
@@ -34,7 +37,6 @@ bindsym $mod+f exec ~/.config/rofi/launcher.sh
 # start a polybar on startup
 exec polybar
 
-# start a picom for enable transparency in the terminal and compatibility with the gaps on between windows
 exec picom --config ~/.config/picom/picom.conf
 
 # start a discord on startup
@@ -192,6 +194,9 @@ client.background       #000000
 #/                                                              \#
 #/                                                              \#
 #===================*BASE COMMANDS "START"*======================#
+
+# take a screenshot of the screen
+bindsym Print exec gnome-screenshot
 
 # set the default terminal to the gnome-terminal
 set $TERMINAL gnome-terminal
