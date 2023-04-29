@@ -1,7 +1,7 @@
 
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
-sudo pacman -S picom gnome-terminal thunar polybar nitrogen spotify-launcher lxappearance
+sudo pacman -S picom thunar polybar nitrogen spotify-launcher lxappearance
 
 sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
 sudo chmod a+rx /usr/local/bin/unimatrix
