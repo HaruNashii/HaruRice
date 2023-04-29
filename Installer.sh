@@ -106,6 +106,7 @@ sudo cp -f "./fonts/GrapeNuts-Regular.ttf" "$HOME/.local/share/fonts/GrapeNuts-R
 sudo cp -f "./fonts/Icomoon-Feather.ttf" "$HOME/.local/share/fonts/Icomoon-Feather.ttf"
 sudo cp -f "./fonts/losevka-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/losevka-Nerd-Font-Complete.ttf"
 sudo cp -f "./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/JetBrains-Mono-Nerd-Font-Complete.ttf"
+sudo cp -f "./fonts/Font_Awesome_5_Free_Solid.otf" "$HOME/.local/share/fonts/Font_Awesome_5_Free_Solid.otf"
 sudo mkdir "$HOME/.local/share/fonts/Google Fonts/Kiwi Maru/"
 sudo cp -f "./fonts/Kiwi_Maru_Regular.14.ttf" "$HOME/.local/share/fonts/Google Fonts/Kiwi Maru/Kiwi_Maru_Regular.14.ttf"
 else
