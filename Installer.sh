@@ -56,13 +56,13 @@ sudo mkdir "$HOME/.config/rofibackup/"
 sudo mv -f "$HOME/.config/rofi/" "$HOME/.config/rofibackup/"
 sudo cp -rf "./rofi" "$HOME/.config/" 
 sudo chmod +x cd "$HOME/.config/rofi/launcher.sh"
-chmod -R a+rw "$HOME/.config/rofi/"
-chmod -R a+rw "$HOME/.config/rofibackup/"
+sudo chmod -R a+rw "$HOME/.config/rofi/"
+sudo chmod -R a+rw "$HOME/.config/rofibackup/"
 cd "$HOME/HaruRice/"
 else
 sudo cp -rf "./rofi" "$HOME/.config/" 
 sudo chmod +x cd "$HOME/.config/rofi/launcher.sh"
-chmod -R a+rw "$HOME/.config/rofi/"
+sudo chmod -R a+rw "$HOME/.config/rofi/"
 cd "/$HOME/HaruRice"
 fi
 
@@ -81,12 +81,12 @@ if [ -d "$HOME/.config/picom/" ]; then
 sudo mkdir "$HOME/.config/picom/backup/"
 sudo mv -f "$HOME/.config/picom/picom.conf" "$HOME/.config/picom/backup/picom.conf"
 sudo cp -f "./picom-config/picom.conf" "$HOME/.config/picom/picom.conf"
-chmod -R a+rw "$HOME/.config/picom/"
-chmod -R a+rw "$HOME/.config/picom/backup/"
+sudo chmod -R a+rw "$HOME/.config/picom/"
+sudo chmod -R a+rw "$HOME/.config/picom/backup/"
 else
 sudo mkdir "$HOME/.config/picom/"
 sudo cp -f "./picom-config/picom.conf" "$HOME/.config/picom/picom.conf"
-chmod -R a+rw "$HOME/.config/picom/"
+sudo chmod -R a+rw "$HOME/.config/picom/"
 fi
 
 clear
@@ -136,12 +136,12 @@ if [ -d "$HOME/.config/i3" ]; then
 sudo mkdir "$HOME/.config/i3/backup"
 sudo mv -f "$HOME/.config/i3/config" "$HOME/.config/i3/backup/config"
 sudo cp -f "./i3-config/config" "$HOME/.config/i3/config"
-chmod -R a+rw "$HOME/.config/i3/"
-chmod -R a+rw "$HOME/.config/i3/backup/"
+sudo chmod -R a+rw "$HOME/.config/i3/"
+sudo chmod -R a+rw "$HOME/.config/i3/backup/"
 else
 sudo mkdir "$HOME/.config/i3"
 sudo cp -f "./i3-config/config" "$HOME/.config/i3/config"
-chmod -R a+rw "$HOME/.config/i3/"
+sudo chmod -R a+rw "$HOME/.config/i3/"
 fi
 
 clear
@@ -162,11 +162,11 @@ if [ -d "/etc/polybar/" ]; then
 sudo mkdir "/etc/polybar/backup"
 sudo mv -f "/etc/polybar/config.ini" "/etc/polybar/backup/config.ini"
 sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
-chmod -R a+rw "$HOME/.config/polybar/"
-chmod -R a+rw "$HOME/.config/polybar/backup/"
+sudo chmod -R a+rw "$HOME/.config/polybar/"
+sudo chmod -R a+rw "$HOME/.config/polybar/backup/"
 else
 sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
-chmod -R a+rw "/etc/polybar/"
+sudo chmod -R a+rw "/etc/polybar/"
 fi
 
 clear
@@ -187,11 +187,11 @@ echo POLYBAR CONFIG IS MADE AND APPLIED
 # INSTALL THE THEMES
 if [ -d "$HOME/.themes" ]; then
 sudo cp -rf "./Graphite-Dark" "$HOME/.themes"
-chmod -R a+rw "$HOME/.themes/"
+sudo chmod -R a+rw "$HOME/.themes/"
 else
 sudo mkdir "$HOME/.themes"
 sudo cp -rf "./Graphite-Dark" "$HOME/.themes"
-chmod -R a+rw "$HOME/.themes/"
+sudo chmod -R a+rw "$HOME/.themes/"
 fi
 
 clear
