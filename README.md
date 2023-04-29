@@ -48,10 +48,10 @@ https://github.com/xorg62/tty-clock
 
 **all your config files should be backup in the same folder with the name backup**
 
-rofi (~/.config/rofibackup)
-polybar (/etc/polybar/backup)
-i3 (~/.config/i3/backup)
-picom (~/.config/picom/backup)
+- rofi (~/.config/rofibackup)
+- polybar (/etc/polybar/backup)
+- i3 (~/.config/i3/backup)
+- picom (~/.config/picom/backup)
 
 # Requirements
 
