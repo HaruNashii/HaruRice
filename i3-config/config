@@ -29,7 +29,7 @@ bindsym $mod+u exec thunar
 bindsym $mod+i exec discord
 
 # start a spotify and the polybar configs for spotify
-bindsym $mod+g exec spotifyctl; exec spotify-listener; exec com.spotify.Client
+bindsym $mod+g exec spotifyctl; exec com.spotify.Client
 
 # start a rofi app launcher
 bindsym $mod+f exec ~/.config/rofi/launcher.sh
@@ -37,6 +37,7 @@ bindsym $mod+f exec ~/.config/rofi/launcher.sh
 # start a polybar on startup
 exec polybar
 
+# start a picom config to allow transparency on the terminal and gaps between the windows
 exec picom --config ~/.config/picom/picom.conf
 
 # start a discord on startup
@@ -67,9 +68,6 @@ bindsym F4 exec gnome-terminal -e "nano /etc/polybar/config.ini"
 # add gaps between the borders
 gaps inner 10
 
-# hide the title bar
-#for_window [class=".*"] border none
-
 # make a window move when other window overlap them
 smart_borders on
 
@@ -98,6 +96,18 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+# resize the window with the arrow keys
+bindsym $mod+Control+Left resize shrink width 20 px or 20 ppt
+bindsym $mod+Control+Right resize grow width 20 px or 20 ppt
+bindsym $mod+Control+Down resize shrink height 20 px or 20 ppt
+bindsym $mod+Control+Up resize grow height 20 px or 20 ppt
+
+# move the window in the direction of the arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -224,10 +234,7 @@ set $ws10 "10"
 # start the lockscreen on startup
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# start the network applet drivers
-#exec --no-startup-id nm-applet
-
-# configure the pulseaudio driver on i3status on the startup
+# configure the pulseaudio driver on i3status
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
@@ -235,12 +242,17 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 
-#===================*BASE COMMANDS "END"*====================#
+#========================*BASE COMMANDS "END"*============================#
 #/
 #/
 #/
 #====================*DEPRECATED OR NOT USING "START"*====================#
 
+#- hide the title bar
+#for_window [class=".*"] border none
+
+#- start the network applet drivers
+#exec --no-startup-id nm-applet
 
 #- start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
