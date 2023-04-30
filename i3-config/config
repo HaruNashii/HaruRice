@@ -22,14 +22,24 @@ bindsym $mod+t  exec gnome-terminal
 # start a firefox
 bindsym $mod+y exec firefox
 
-# start a nemo
+# start a thunar
 bindsym $mod+u exec thunar 
 
-# start a discord
+# start a discord on the workspace 3
 bindsym $mod+i exec discord
+assign [class="discord"] 3
+assign [class="Discord"] 3
 
-# start a spotify and the polybar configs for spotify
+# start a steam on the workspace 5
+bindsym $mod+h exec steam
+assign [class="steam"] 5
+assign [class="Steam"] 5
+
+# start a spotify on the workspace 4 and the polybar configs for spotify
 bindsym $mod+g exec spotifyctl; exec com.spotify.Client
+assign [class="spotify"] 4
+assign [class="Spotify"] 4
+
 
 # start a rofi app launcher
 bindsym $mod+f exec ~/.config/rofi/launcher.sh
@@ -42,9 +52,13 @@ exec picom --config ~/.config/picom/picom.conf
 
 # start a discord on startup
 exec discord
+assign [class="discord"] 3
+assign [class="Discord"] 3
 
-# start a discord on startup
+# start a steam on startup
 exec steam
+assign [class="steam"] 5
+assign [class="Steam"] 5
 
 # start a nitrogen wallpaper maneger on startup
 exec nitrogen --restore
@@ -52,6 +66,8 @@ exec nitrogen --restore
 # start a spotify on startup
 exec spotifyctl
 exec com.spotify.Client
+assign [class="spotify"] 4
+assign [class="Spotify"] 4
 
 #===================*APPLICATIONS MANEGAMENT "END"*====================#
 #/                                                                    \#
