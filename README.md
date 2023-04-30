@@ -58,6 +58,10 @@ https://github.com/xorg62/tty-clock
 - i3 (~/.config/i3/backup)
 - picom (~/.config/picom/backup)
 
+if your use the installer2.sh
+
+the i3 config will be in (~/.i3/backup)
+
 # Requirements
 
 **you will need to use the "systemd" i your don't use you can easily modify the script to work**
