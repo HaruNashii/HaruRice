@@ -20,6 +20,14 @@ echo PACKAGE IS SYNCHRONIZED
 echo UNIMATRIX DOWNLOADED
 
 
+if [ -d "$HOME/Pictures/"]; then
+sudo cp -f "./Wallpaper/*" "$HOME/Pictures/"
+else
+sudo mkdir "$HOME/Pictures/"
+sudo cp -f "./Wallpaper/*" "$HOME/Pictures/"
+sudo chmod -R a+rw "$HOME/Pictures"
+fi
+
 if [ -x "/usr/local/bin/tty-clock" ]; then
 clear
 else
