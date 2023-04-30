@@ -109,7 +109,7 @@ echo PICOM CONFIG IS MADE AND APPLIED
 
 
 # INSTALL THE FONTS AND UPDATE THEN IN THE SYSTEM
-if [ -d /usr/share/fonts/noto-cjk" ]; then
+if [ -d "/usr/share/fonts/noto-cjk" ]; then
 sudo cp -f "./fonts/GrapeNuts-Regular.ttf" "$HOME/.local/share/fonts/GrapeNuts-Regular.ttf"
 sudo cp -f "./fonts/Icomoon-Feather.ttf" "$HOME/.local/share/fonts/Icomoon-Feather.ttf"
 sudo cp -f "./fonts/losevka-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/losevka-Nerd-Font-Complete.ttf"
