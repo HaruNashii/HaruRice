@@ -73,6 +73,8 @@ https://github.com/xorg62/tty-clock
 
 # Installation
 
+```THIS SCRIPT WILL NOT APPLY THE THEME AND THE WALLPAPER THIS YOU WILL NEED TO MAKE BY THE NITROGEN AND THE LXAPPERANCE THAT IS DOWNLOADED BY THE SCRIPT```
+
 **Open the terminal and run this command**
 
 
