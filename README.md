@@ -40,7 +40,7 @@ https://github.com/xorg62/tty-clock
 - lxapperance
 - GTK Graphite Dark Theme
 - Thunar
-- spotify
+- spotify (from flatpak, it's work better with the spotify-module for me)
 - polybar-spotify-module made by @Mihirlad55
 - rofi
 - rofi themes and config made by @adi1090x
