@@ -35,7 +35,7 @@ https://github.com/xorg62/tty-clock
 - gnome-screenshot
 - tyy-clock made by @xorg62
 - unimatrix
-- fonts (GrapeNuts, NotoSerifCJK, Icomoon-Feather, losevka-Nerd, JetBrains-Mono-Nerd.)
+- fonts (GrapeNuts, NotoSans-CJK, Icomoon-Feather, losevka-Nerd, JetBrains-Mono-Nerd.)
 - base-devel
 - polybar
 - lxapperance
