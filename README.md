@@ -67,7 +67,7 @@ https://github.com/xorg62/tty-clock
 **you will need the "GIT" "base-devel" "dbus" "flatpak" to clone the repository and compile the tyy-clock"**
 **you can install it with the following command in your terminal**
 
-```sudo pacman -S git base-devel dbus flatpak```
+```sudo pacman -S git base-devel dbus gvfs flatpak```
 
 
 
