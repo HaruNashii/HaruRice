@@ -101,22 +101,20 @@ echo PICOM CONFIG IS MADE AND APPLIED
 
 
 # INSTALL THE FONTS AND UPDATE THEN IN THE SYSTEM
-if [ -d "$HOME/.local/share/fonts/Google Fonts/" ]; then
+if [ -d /usr/share/fonts/noto-cjk" ]; then
 sudo cp -f "./fonts/GrapeNuts-Regular.ttf" "$HOME/.local/share/fonts/GrapeNuts-Regular.ttf"
 sudo cp -f "./fonts/Icomoon-Feather.ttf" "$HOME/.local/share/fonts/Icomoon-Feather.ttf"
 sudo cp -f "./fonts/losevka-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/losevka-Nerd-Font-Complete.ttf"
 sudo cp -f "./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/JetBrains-Mono-Nerd-Font-Complete.ttf"
 sudo cp -f "./fonts/Font_Awesome_5_Free_Solid.otf" "$HOME/.local/share/fonts/Font_Awesome_5_Free_Solid.otf"
-sudo mkdir "$HOME/.local/share/fonts/Google Fonts/Kiwi Maru/"
-sudo cp -f "./fonts/Kiwi_Maru_Regular.14.ttf" "$HOME/.local/share/fonts/Google Fonts/Kiwi Maru/Kiwi_Maru_Regular.14.ttf"
+sudo cp -f "./fonts/NotoSansCJK-Regular.ttc" "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc"
 else
 sudo cp -f "./fonts/GrapeNuts-Regular.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/Icomoon-Feather.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/losevka-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/"
-sudo mkdir "$HOME/.local/share/fonts/Google Fonts/"
-sudo mkdir "$HOME/.local/share/fonts/Google Fonts/Kiwi Maru/"
-sudo cp -f "./fonts/Kiwi_Maru_Regular.14.ttf" "$HOME/.local/share/fonts/Google Fonts/Kimi Maru/"
+sudo mkdir "/usr/share/fonts/noto-cjk"
+sudo cp -f "./fonts/NotoSansCJK-Regular.ttc" "/usr/share/fonts/noto-cjk/"
 fi
 sudo fc-cache
 
