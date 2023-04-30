@@ -62,6 +62,7 @@ https://github.com/xorg62/tty-clock
 
 **you will need to use the "systemd" i your don't use you can easily modify the script to work**
 
+**this scripts uses the "GNU Core Utilities" such as "mv" "cp" "mkdir" "chmod" if your distro don't have it will not work** 
 
 **you will need the "GIT" "base-devel" "dbus" "flatpak" to clone the repository and compile the tyy-clock"**
 **you can install it with the following command in your terminal**
