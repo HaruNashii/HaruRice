@@ -1,6 +1,6 @@
 # THIS SCRIPT IS UNDER DEVELOPMENT PLEASE DON'T RUN NOTHING THIS MAY BREAK YOUR SYSTEM CONFIGURATION
 
-![Screenshot from 2023-04-30 09-10-42](https://user-images.githubusercontent.com/116776134/235352551-b83781fa-73df-4891-ab1d-bf12a9f27335.png)
+![Screenshot from 2023-04-30 18-20-27](https://user-images.githubusercontent.com/116776134/235376866-077d6c5c-7ba8-406c-b658-c33d6e7ebf9b.png)
 
 
 - **ePapirus and Papirus White Icons
