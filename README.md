@@ -69,7 +69,7 @@ the i3 config backup will be in (~/.i3/backup)
 
 **this scripts uses the "GNU Core Utilities" such as "mv" "cp" "mkdir" "chmod" "make" if your distro don't have it will not work** 
 
-**you will need the "GIT" "base-devel" "dbus" "flatpak" to clone the repository, compile the tyy-clock, install spotify, install picom dependency"**
+**you will need the "GIT" "base-devel" "dbus" "flatpak" to clone the repository, compile the tyy-clock, install spotify and install picom dependency"**
 **you can install it with the following command in your terminal**
 
 ```sudo pacman -S git base-devel dbus gvfs flatpak```
