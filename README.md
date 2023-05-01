@@ -85,7 +85,7 @@ the i3 config backup will be in (~/.i3/backup)
 **THE INSTALLER.SH IS THE NORMAL ONE JUST USE THE INSTALLER2.SH IF YOUR I3 FOLDER IS IN YOUR $HOME FOLDER (like in manjaro i3)**
 
 
-**Open the terminal and run this command**
+**Open the terminal and run these commands**
 
 
 ```cd ~```
