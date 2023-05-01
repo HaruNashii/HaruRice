@@ -61,7 +61,7 @@ https://github.com/xorg62/tty-clock
 
 if your use the installer2.sh
 
-the i3 config will be in (~/.i3/backup)
+the i3 config backup will be in (~/.i3/backup)
 
 # Requirements
 
