@@ -2,7 +2,7 @@
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
 clear
-sudo pacman -S picom thunar polybar nitrogen lxappearance gnome-screenshot
+sudo pacman -S picom thunar polybar nitrogen lxappearance gnome-screenshot rofi
 flatpak install spotify
 
 clear
@@ -21,10 +21,10 @@ echo UNIMATRIX DOWNLOADED
 
 
 if [ -d "$HOME/Pictures/"]; then
-sudo cp -f "./Wallpaper/*" "$HOME/Pictures/"
+sudo cp -f "./Wallpaper/1.png" "$HOME/Pictures/1.png"
 else
 sudo mkdir "$HOME/Pictures/"
-sudo cp -f "./Wallpaper/*" "$HOME/Pictures/"
+sudo cp -f "./Wallpaper/1.png" "$HOME/Pictures/1.png"
 sudo chmod -R a+rw "$HOME/Pictures"
 fi
 
@@ -107,6 +107,12 @@ echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
 echo ROFI CONFIG IS MADE AND APPLIED
 echo PICOM CONFIG IS MADE AND APPLIED
 
+if [ -d $HOME/.local/share/fonts]
+clear
+else
+sudo mkdir $HOME/.local/share/fonts
+sudo chmod -R a+rw
+fi
 
 # INSTALL THE FONTS AND UPDATE THEN IN THE SYSTEM
 if [ -d "/usr/share/fonts/noto-cjk" ]; then
