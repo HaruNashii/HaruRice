@@ -15,6 +15,13 @@ sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatr
 sudo chmod a+rx "/usr/local/bin/unimatrix"
 fi
 
+
+if [ -d "$HOME/.config/" ]; then
+clear
+else
+sudo mkdir "$HOME/.config
+fi
+
 clear
 echo PACKAGE IS SYNCHRONIZED 
 echo UNIMATRIX DOWNLOADED
@@ -160,11 +167,7 @@ echo PICOM CONFIG IS MADE AND APPLIED
 echo FONTS SUCESSFULY ADDED
 echo FONT-CACHE SUCESSFULY UPDATED
 
-if [ -d "$HOME/.config/" ]; then
-clear
-else
-sudo mkdir "$HOME/.config
-fi
+
 
 # MAKE A BACKUP OF YOUR OLD I3 CONFIG AND ACTIVE THE RICE ONE
 if [ -d "$HOME/.config/i3" ]; then
