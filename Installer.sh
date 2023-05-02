@@ -2,7 +2,7 @@
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
 clear
-sudo pacman -S picom thunar polybar nitrogen lxappearance gnome-screenshot rofi
+sudo pacman -S picom thunar polybar nitrogen lxappearance gnome-terminal gnome-screenshot rofi
 flatpak install spotify
 
 clear
@@ -19,13 +19,14 @@ clear
 echo PACKAGE IS SYNCHRONIZED 
 echo UNIMATRIX DOWNLOADED
 
-
+cd "$HOME/HaruRice/"
 if [ -d "$HOME/Pictures/"]; then
 sudo cp -f "./Wallpaper/1.png" "$HOME/Pictures/1.png"
 else
 sudo mkdir "$HOME/Pictures/"
 sudo cp -f "./Wallpaper/1.png" "$HOME/Pictures/1.png"
 sudo chmod -R a+rw "$HOME/Pictures"
+sudo chmod -R a+rw "$HOME/Pictures/*"
 fi
 
 if [ -x "/usr/local/bin/tty-clock" ]; then
@@ -43,7 +44,7 @@ echo UNIMATRIX
 echo TTY-CLOCK DOWNLOADED
 
 
-
+cd "$HOME/HaruRice/"
 cd "./polybar-spotify-module/src/"
 sudo make install
 systemctl --user enable spotify-listener
@@ -64,15 +65,15 @@ if [ -d "$HOME/.config/rofi/" ]; then
 sudo mkdir "$HOME/.config/rofibackup/"
 sudo mv -f "$HOME/.config/rofi/" "$HOME/.config/rofibackup/"
 sudo cp -rf "./rofi" "$HOME/.config/" 
-sudo chmod +x cd "$HOME/.config/rofi/launcher.sh"
+sudo chmod +x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod -R a+rw "$HOME/.config/rofibackup/"
 cd "$HOME/HaruRice/"
 else
 sudo cp -rf "./rofi" "$HOME/.config/" 
-sudo chmod +x cd "$HOME/.config/rofi/launcher.sh"
+sudo chmod +x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
-cd "/$HOME/HaruRice"
+cd "$HOME/HaruRice"
 fi
 
 clear
@@ -86,16 +87,16 @@ echo ROFI CONFIG IS MADE AND APPLIED
 
 
 # INSTALL THE PICOM CONFIGURATION
-if [ -d "$HOME/.config/picom/" ]; then
+if [ -d "$HOME/.config/picom" ]; then
 sudo mkdir "$HOME/.config/picom/backup/"
 sudo mv -f "$HOME/.config/picom/picom.conf" "$HOME/.config/picom/backup/picom.conf"
 sudo cp -f "./picom-config/picom.conf" "$HOME/.config/picom/picom.conf"
-sudo chmod -R a+rw "$HOME/.config/picom/"
-sudo chmod -R a+rw "$HOME/.config/picom/backup/"
+sudo chmod -R a+rw "$HOME/.config/picom"
+sudo chmod -R a+rw "$HOME/.config/picom/backup"
 else
-sudo mkdir "$HOME/.config/picom/"
+sudo mkdir "$HOME/.config/picom"
 sudo cp -f "./picom-config/picom.conf" "$HOME/.config/picom/picom.conf"
-sudo chmod -R a+rw "$HOME/.config/picom/"
+sudo chmod -R a+rw "$HOME/.config/picom"
 fi
 
 clear
@@ -107,7 +108,23 @@ echo RICES APPS AND COMMANDS SUCESSFULY DOWNLOADED
 echo ROFI CONFIG IS MADE AND APPLIED
 echo PICOM CONFIG IS MADE AND APPLIED
 
-if [ -d $HOME/.local/share/fonts]
+if [ -d "$HOME/.local" ]; then
+clear
+else
+mkdir "$HOME/.local"
+chmod -R +rw
+fi
+
+
+if [ -d "$HOME/.local/share" ]; then
+clear
+else
+sudo mkdir "$HOME/.local/share"
+sudo chmod -R +rw "$HOME/.local/share"
+fi
+
+
+if [ -d "$HOME/.local/share/fonts/" ]; then
 clear
 else
 sudo mkdir $HOME/.local/share/fonts
@@ -143,7 +160,11 @@ echo PICOM CONFIG IS MADE AND APPLIED
 echo FONTS SUCESSFULY ADDED
 echo FONT-CACHE SUCESSFULY UPDATED
 
-
+if [ -d "$HOME/.config/" ]; then
+clear
+else
+sudo mkdir "$HOME/.config
+fi
 
 # MAKE A BACKUP OF YOUR OLD I3 CONFIG AND ACTIVE THE RICE ONE
 if [ -d "$HOME/.config/i3" ]; then
@@ -155,7 +176,7 @@ sudo chmod -R a+rw "$HOME/.config/i3/backup/"
 else
 sudo mkdir "$HOME/.config/i3"
 sudo cp -f "./i3-config/config" "$HOME/.config/i3/config"
-sudo chmod -R a+rw "$HOME/.config/i3/"
+sudo chmod -R a+rw "$HOME/.config/i3/*"
 fi
 
 clear
@@ -179,8 +200,9 @@ sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "$HOME/.config/polybar/"
 sudo chmod -R a+rw "$HOME/.config/polybar/backup/"
 else
+sudo mkdir /etc/polybar
 sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
-sudo chmod -R a+rw "/etc/polybar/"
+sudo chmod -R a+rw "/etc/polybar"
 fi
 
 clear
@@ -205,7 +227,7 @@ sudo chmod -R a+rw "$HOME/.themes/"
 else
 sudo mkdir "$HOME/.themes"
 sudo cp -rf "./Graphite-Dark" "$HOME/.themes"
-sudo chmod -R a+rw "$HOME/.themes/"
+sudo chmod -R a+rw "$HOME/.themes"
 fi
 
 clear
