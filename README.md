@@ -32,7 +32,7 @@ https://github.com/xorg62
 https://github.com/xorg62/tty-clock
 
 
-# This Rice will install or reinstall if yo already have
+# This Rice will install or reinstall if yo already have:
 
 - firefoz
 - picom
