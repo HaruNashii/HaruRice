@@ -32,8 +32,9 @@ https://github.com/xorg62
 https://github.com/xorg62/tty-clock
 
 
-# This Rice will install
+# This Rice will install or reinstall if yo already have
 
+- firefoz
 - picom
 - gnome-terminal-transparency
 - gnome-screenshot
