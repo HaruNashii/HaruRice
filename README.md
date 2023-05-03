@@ -74,7 +74,7 @@ the i3 config backup will be in (~/.i3/backup)
 
 **you can install it with the following command in your terminal**
 
-```sudo pacman -S git base-devel dbus gvfs flatpak```
+```sudo pacman -S git base-devel dbus flatpak```
 
 
 
