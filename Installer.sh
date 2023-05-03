@@ -1,3 +1,9 @@
+if [ -f "/var/lib/pacman/db.lck" ]; then
+sudo rm "/var/lib/pacman/db.lck"
+else
+clear
+fi
+
 
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
