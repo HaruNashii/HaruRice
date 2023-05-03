@@ -277,6 +277,8 @@ makepkg
 sudo pacman -U gnome-terminal-transparency-3.46.8-1-x86_64.pkg.tar.zst
 cd "$HOME/HaruRice"
 
+sudo pacman -S gvfs
+
 clear
 echo PACKAGE IS SYNCHRONIZED 
 echo UNIMATRIX DOWNLOADED
