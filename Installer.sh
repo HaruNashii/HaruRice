@@ -9,7 +9,7 @@ fi
 sudo pacman -Sy
 sudo pacman --noconfirm -Syu
 clear
-sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance gnome-terminal gnome-screenshot rofi neofetch firefox
+sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance gnome-screenshot rofi neofetch
 flatpak install spotify
 
 clear
@@ -276,6 +276,8 @@ echo POLYBAR CONFIG IS MADE AND APPLIED
 echo GRAPHITE-DARK THEME IS MOVED FOR .THEMES
 echo I3 AND POLYBAR SUCESSFULY RESTARTED
 
+
+sudo pacman --noconfirm -S gnome-terminal
 
 # INSTALL THE GNOME-TERMINAL-TRANSPARENCY
 cd "$HOME/HaruRice/"
