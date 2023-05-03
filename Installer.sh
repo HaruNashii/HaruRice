@@ -1,6 +1,7 @@
 
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
+sudo pacman -Syu
 clear
 sudo pacman -S picom thunar polybar nitrogen lxappearance gnome-terminal gnome-screenshot rofi neofetch
 flatpak install spotify
