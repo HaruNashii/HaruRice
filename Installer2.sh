@@ -2,7 +2,7 @@
  sudo pacman -Sy 
  sudo pacman --noconfirm -Syu
  clear 
- sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance neofetch gnome-terminal gnome-screenshot rofi 
+ sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance neofetch gnome-terminal gnome-screenshot rofi firefox
  flatpak install spotify 
   
  clear 
