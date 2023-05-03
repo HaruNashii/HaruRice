@@ -44,6 +44,7 @@ https://github.com/xorg62/tty-clock
 - lxapperance
 - GTK Graphite Dark Theme
 - Thunar
+- gvfs (optional dependency or thunar icons)
 - spotify (from flatpak, it's work better with the spotify-module for me)
 - polybar-spotify-module made by @Mihirlad55
 - rofi
@@ -69,7 +70,7 @@ the i3 config backup will be in (~/.i3/backup)
 
 **this scripts uses the "GNU Core Utilities" such as "mv" "cp" "mkdir" "chmod" "make" if your distro don't have it will not work** 
 
-**you will need the "GIT" "base-devel" "dbus" "flatpak" to clone the repository, compile the tyy-clock, install spotify and install picom dependency"**
+**you will need the "GIT" "base-devel" "flatpak" to clone the repository, compile the tyy-clock, install spotify and install picom dependency"**
 
 **you can install it with the following command in your terminal**
 
