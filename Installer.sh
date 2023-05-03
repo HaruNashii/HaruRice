@@ -19,7 +19,7 @@ fi
 if [ -d "$HOME/.config/" ]; then
 clear
 else
-sudo mkdir "$HOME/.config
+sudo mkdir "$HOME/.config"
 fi
 
 clear
