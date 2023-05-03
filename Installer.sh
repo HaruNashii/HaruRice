@@ -27,7 +27,7 @@ echo PACKAGE IS SYNCHRONIZED
 echo UNIMATRIX DOWNLOADED
 
 cd "$HOME/HaruRice/"
-if [ -d "$HOME/Pictures/"]; then
+if [ -d "$HOME/Pictures/" ]; then
 sudo cp -f "./Wallpaper/1.png" "$HOME/Pictures/1.png"
 else
 sudo mkdir "$HOME/Pictures/"
