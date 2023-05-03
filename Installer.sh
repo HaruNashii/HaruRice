@@ -1,9 +1,9 @@
 
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
-sudo pacman -Syu
+sudo pacman --noconfirm -Syu
 clear
-sudo pacman -S picom thunar polybar nitrogen lxappearance gnome-terminal gnome-screenshot rofi neofetch
+sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance gnome-terminal gnome-screenshot rofi neofetch
 flatpak install spotify
 
 clear
@@ -278,7 +278,7 @@ makepkg
 sudo pacman -U gnome-terminal-transparency-3.46.8-1-x86_64.pkg.tar.zst
 cd "$HOME/HaruRice"
 
-sudo pacman -S gvfs
+sudo pacman --noconfirm -S gvfs
 
 clear
 echo PACKAGE IS SYNCHRONIZED.
