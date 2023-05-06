@@ -125,6 +125,15 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# move the mouse with a keyboard bind "encrease the number 15 to encrease the sensibility"
+bindsym shift+w exec xdotool mousemove_relative 0 -15
+bindsym shift+s exec xdotool mousemove_relative 0 15
+bindsym shift+a exec xdotool mousemove_relative -- -15 0
+bindsym shift+d exec xdotool mousemove_relative 15 0
+
+# bind the click of the mouse on the enter of the keyboard keypad
+bindsym KP_Enter exec xdotool click 1
+
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
