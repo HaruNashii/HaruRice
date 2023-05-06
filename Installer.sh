@@ -158,6 +158,7 @@ sudo cp -f "./fonts/GrapeNuts-Regular.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/Icomoon-Feather.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/losevka-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/"
+sudo cp -f "./fonts/Font_Awesome_5_Free_Solid.otf" "$HOME/.local/share/fonts/"
 sudo mkdir "/usr/share/fonts/noto-cjk"
 sudo cp -f "./fonts/NotoSansCJK-Regular.ttc" "/usr/share/fonts/noto-cjk/"
 fi
