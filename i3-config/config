@@ -131,6 +131,10 @@ floating_modifier $mod
 # move tiling windows via drag & drop by left-clicking into the title bar
 tiling_drag modifier titlebar
 
+# encrease and decrease the gamma of the monitor
+bindsym $mod+plus exec xgamma -gamma 1.5:1.5:1.5
+bindsym $mod+minus exec xgamma -gamma 1.0:1.0:1.0
+
 
 #-----*workspace system "START"*-----#
 
