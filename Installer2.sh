@@ -1,6 +1,13 @@
+if [ -f "/var/lib/pacman/db.lck" ]; then
+sudo rm "/var/lib/pacman/db.lck"
+else
+clear
+fi
+
 # This install all the apps that is configured on the i3 config and that is in the rice 
  sudo pacman -Sy 
  sudo pacman --noconfirm -Syu
+ sudo pacman --noconfirm -S  docbook-xsl libnautilus-extension gnome-shell yelp-tools meson
  clear 
  sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance neofetch gnome-terminal gnome-screenshot rofi firefox
  flatpak install spotify 
