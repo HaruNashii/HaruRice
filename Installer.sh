@@ -4,6 +4,8 @@ else
 clear
 fi
 
+# This install the dependency for the gnome-terminal
+sudo pacman -S  docbook-xsl libnautilus-extension gnome-shell yelp-tools meson
 
 # This install all the apps that is configured on the i3 config and that is in the rice
 sudo pacman -Sy
