@@ -45,6 +45,12 @@ sudo rm -rf "$HOME/.i3/backup"
 else
 echo OK
 fi
+if [ -d "$HOME/.config/i3" ]; then
+sudo rm -rf "$HOME/.config/i3"
+else
+echo OK
+fi
+
 
 if [ -d "$HOME/.i3" ]; then
 sudo mkdir "$HOME/.i3/backup"
@@ -57,7 +63,6 @@ if [ -d "$HOME/.config/i3" ]; then
 sudo mkdir "$HOME/.config/i3/backup/"
 sudo mv -f "$HOME/.config/i3/config" "$HOME/.config/i3/backup/config"
 sudo chmod -R a+rw "$HOME/.config/i3/backup/"
-sudo chmod a+rw "$HOME/.config/i3/backup/*"
 else
 clear
 fi
