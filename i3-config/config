@@ -126,10 +126,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # move the mouse with a keyboard bind "encrease the number 15 to encrease the sensibility"
-bindsym control+w exec xdotool mousemove_relative 0 -15
-bindsym control+s exec xdotool mousemove_relative 0 15
-bindsym control+a exec xdotool mousemove_relative -- -15 0
-bindsym control+d exec xdotool mousemove_relative 15 0
+bindsym control+shift+w exec xdotool mousemove_relative 0 -15
+bindsym control+shift+s exec xdotool mousemove_relative 0 15
+bindsym control+shift+a exec xdotool mousemove_relative -- -15 0
+bindsym control+shift+d exec xdotool mousemove_relative 15 0
 
 # bind the click of the mouse on the enter of the keyboard keypad
 bindsym KP_Enter exec xdotool click 1
