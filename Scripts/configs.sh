@@ -46,9 +46,11 @@ fi
 
 # EXPORT THE CONFIG OF THE FOR THE I3 FOLDER
 if [ -d "$HOME/.i3/" ]; then
-sudo cp -rf "$HOME/HaruRice/i3-config/config" "$HOME/.i3/config"
+exec "$HOME/HaruRice/Scripts/i3configv2.sh"
+sudo chmod -R a+rw "$HOME/.config/i3"
+sudo chmod a+rw "$HOME/.config/i3/*"
 else
-sudo cp -rf "$HOME/HaruRice/i3-config/config" "$HOME/.config/i3/config"
+exec "$HOME/HaruRice/Scripts/i3configv1.sh"
 sudo chmod -R a+rw "$HOME/.config/i3"
 sudo chmod a+rw "$HOME/.config/i3/*"
 fi
@@ -63,7 +65,7 @@ sudo chmod -R a+rw "/etc"
 sudo chmod a+rw "/etc"
 sudo chmod a+rw "/etc/*" 
 fi
-if [ -f "/etc/polybar" ]; then
+if [ -d "/etc/polybar" ]; then
 sudo cp -rf "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "$HOME/.config/polybar/"
 sudo chmod a+rw "$HOME/.config/polybar/*"
