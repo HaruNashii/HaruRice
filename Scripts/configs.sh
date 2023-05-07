@@ -1,13 +1,12 @@
 # INSTALL THE ROFI CONFIGURATION
 if [ -d "$HOME/.config/rofi/" ]; then
-cd "$HOME/HaruRice/"
-sudo cp -rf "./rofi" "$HOME/.config/" 
+sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/" 
 sudo chmod a+x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod a+rw "$HOME/.config/rofi/*"
 else
 cd "$HOME/HaruRice/"
-sudo cp -rf "./rofi" "$HOME/.config/"
+sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/"
 sudo chmod a+x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod a+rw "$HOME/.config/rofi/*"
@@ -45,18 +44,17 @@ fi
 
 
 
-# EXECUTE THE SCRIPT "i3configv1.sh" OR "i3configv2.sh" DEPENDING ON THE FOLDERS EXISTING
-if [ -d "$HOME/.i3" ]; 
-cd "$HOME/HaruRice/"
-./Script/i3configv2.sh
+# EXPORT THE CONFIG OF THE FOR THE I3 FOLDER
+if [ -d "$HOME/.i3" ];
+sudo cp -rf "$HOME/HaruRice/i3-config/config" "$HOME/.i3/config"
 else
-cd "$HOME/HaruRice/"
-./Script/i3configv1.sh
+sudo cp -rf "$HOME/HaruRice/i3-config/config" "$HOME/.config/i3/config"
+sudo chmod -R a+rw "$HOME/.config/i3"
+sudo chmod a+rw "$HOME/.config/i3/*"
 fi
 
 
-
-# CHECK IF THE FOLDER FOR THE INSTALLATION EXIST THEN MAKE A BACKUP OF YOUR OLD POLYBAR CONFIG AND ACTIVE THE RICE ONE
+# CHECK IF THE FOLDER FOR THE INSTALLATION EXIST THEN EXPORT THE RICE CONFIG TO THE FOLDER
 if [ -d "/etc" ]; then
 clear
 else
@@ -65,15 +63,13 @@ sudo chmod -R a+rw "/etc"
 sudo chmod a+rw "/etc"
 sudo chmod a+rw "/etc/*" 
 fi
-if [ -f "/etc/polybar/config.ini" ]; then
-cd "$HOME/HaruRice/"
-sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
+if [ -f "/etc/polybar" ]; then
+sudo cp -rf "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "$HOME/.config/polybar/"
 sudo chmod a+rw "$HOME/.config/polybar/*"
 else
-cd "$HOME/HaruRice/"
 sudo mkdir /etc/polybar
-sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
+sudo cp -f "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "/etc/polybar"
 sudo chmod a+rw "/etc/polybar/*"
 fi
