@@ -12,3 +12,5 @@ sudo pacman --noconfirm -Sy
 sudo pacman --noconfirm -Syu
 sudo pacman --noconfirm -S base-devel dbus flatpak
 
+# INSTALL THE POLYBAR BECAUSE IF INSTALL IN THE FINAL WILL DELETE THE CONFIG.INI
+sudo pacman --noconfirm -S polybar
