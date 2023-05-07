@@ -22,8 +22,8 @@ bindsym $mod+t  exec gnome-terminal
 # start a firefox
 bindsym $mod+y exec firefox
 
-# start a thunar
-bindsym $mod+u exec thunar 
+# start a ranger
+bindsym $mod+u exec gnome-terminal -- ranger
 
 # start a discord on the workspace 3
 bindsym $mod+i exec discord
