@@ -6,9 +6,7 @@ clear
 fi
 
 
-
 # UPDATE THE SYSTEM AND INSTALL THE DEPENDENCIES
 sudo pacman --noconfirm -Sy
 sudo pacman --noconfirm -Syu
 sudo pacman --noconfirm -S base-devel dbus flatpak
-
