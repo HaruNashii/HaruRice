@@ -74,8 +74,6 @@ https://github.com/xorg62/tty-clock
 
 **this scripts uses the "GNU Core Utilities" such as "mv" "cp" "mkdir" "chmod" "make" if your distro don't have it will not work** 
 
-**you can install it with the following command in your terminal**
-
 
 
 # Installation
