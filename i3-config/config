@@ -45,10 +45,10 @@ assign [class="Spotify"] 4
 bindsym $mod+f exec ~/.config/rofi/launcher.sh
 
 # start a polybar on startup
-exec polybar
+exec --no-startup-id polybar
 
 # start a picom config to allow transparency on the terminal and gaps between the windows
-exec picom --config ~/.config/picom/picom.conf
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # start a discord on startup
 exec discord
