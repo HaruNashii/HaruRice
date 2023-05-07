@@ -1,9 +1,11 @@
 # ADD PERMISSION FOR THE SCRIPTS TO RUN
-sudo chmod a+rwx ./Scripts/dependencies.sh
-sudo chmod a+rwx ./Scripts/backups.sh
-sudo chmod a+rwx ./Scripts/configs.sh
-sudo chmod a+rwx ./Scripts/fonts.sh
-sudo chmod a+rwx ./Scripts/apps.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/i3configv1.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/i3configv2.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/dependencies.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/backups.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/configs.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/fonts.sh
+sudo chmod a+rwx $HOME/HaruRice/Scripts/apps.sh
 echo PERMISSION ADDED TO THE SCRIPTS
 
 # REMOVE THE BLOCK OF THE PACMAN IF EXIST
