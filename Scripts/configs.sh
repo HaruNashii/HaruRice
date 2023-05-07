@@ -48,14 +48,10 @@ fi
 # EXECUTE THE SCRIPT "i3configv1.sh" OR "i3configv2.sh" DEPENDING ON THE FOLDERS EXISTING
 if [ -d "$HOME/.i3" ]; 
 cd "$HOME/HaruRice/"
-chmod -R a+rwx "./Script/"
-chmod a+rwx "./Script/*"
-exec "./Script/i3configv2.sh"
+./Script/i3configv2.sh
 else
 cd "$HOME/HaruRice/"
-chmod -R a+rwx "./Script/"
-chmod a+rwx "./Script/*"
-exec "./Script/i3configv1.sh"
+./Script/i3configv1.sh
 fi
 
 
@@ -69,7 +65,7 @@ sudo chmod -R a+rw "/etc"
 sudo chmod a+rw "/etc"
 sudo chmod a+rw "/etc/*" 
 fi
-if [ -d "/etc/polybar/" ]; then
+if [ -f "/etc/polybar/config.ini" ]; then
 cd "$HOME/HaruRice/"
 sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "$HOME/.config/polybar/"
