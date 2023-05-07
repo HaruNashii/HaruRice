@@ -10,20 +10,20 @@ WILL NOT BE INSTALLED BECAUSE IS TO MANY ARCHIVE, YOU CAN GET THE ICONS BY HERE:
 ```https://www.gnome-look.org/p/1166289/```
 
 # Credits
-**This Script Uses the Polybar-Spotify-Module made by
+**This Script Uses the Polybar-Spotify-Module | made by
  @Mihirlad55 / Mihir lad**
 
 https://github.com/mihirlad55
 https://github.com/mihirlad55/polybar-spotify-module
 
 
-**This Script also use the rofi theme and config made by
+**This Script also use the rofi theme and config | made by
  @adi1090x / Aditya Shakya**
 
 https://github.com/adi1090x
 https://github.com/adi1090x/rofi
 
-**This Script also use the tyy-clock made by
+**This Script also use the tyy-clock | made by
  xorg62**
 
 https://github.com/xorg62
@@ -35,7 +35,7 @@ https://github.com/xorg62/tty-clock
 - picom
 - gnome-terminal-transparency
 - gnome-screenshot
-- tyy-clock made by @xorg62
+- tyy-clock | made by @xorg62
 - unimatrix
 - neofetch
 - fonts (GrapeNuts, NotoSans-CJK, Icomoon-Feather, losevka-Nerd, JetBrains-Mono-Nerd, Awesome5Free.)
@@ -44,9 +44,9 @@ https://github.com/xorg62/tty-clock
 - GTK Graphite Dark Theme
 - ranger
 - spotify (from flatpak, it's work better with the spotify-module for me)
-- polybar-spotify-module made by @Mihirlad55
+- polybar-spotify-module | made by @Mihirlad55
 - rofi
-- rofi themes and config made by @adi1090x
+- rofi themes and config | made by @adi1090x
 - nitrogen
 
 **Dependencies**
@@ -66,8 +66,7 @@ https://github.com/xorg62/tty-clock
 - picom (~/.config/picom/backup)
 
 
-
-if your i3 config file is on the home folder the i3 config backup will be in (~/.i3/backup)
+**if your i3 config file is on the home folder the i3 config backup will be in (~/.i3/backup)**
 
 # Requirements
 
