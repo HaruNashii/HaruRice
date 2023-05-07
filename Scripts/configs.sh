@@ -1,12 +1,12 @@
 # INSTALL THE ROFI CONFIGURATION
 if [ -d "$HOME/.config/rofi/" ]; then
-sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/" 
+sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/rofi" 
 sudo chmod a+x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod a+rw "$HOME/.config/rofi/*"
 else
 cd "$HOME/HaruRice/"
-sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/"
+sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/rofi"
 sudo chmod a+x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod a+rw "$HOME/.config/rofi/*"
@@ -45,7 +45,7 @@ fi
 
 
 # EXPORT THE CONFIG OF THE FOR THE I3 FOLDER
-if [ -d "$HOME/.i3" ];
+if [ -d "$HOME/.i3/" ]; then
 sudo cp -rf "$HOME/HaruRice/i3-config/config" "$HOME/.i3/config"
 else
 sudo cp -rf "$HOME/HaruRice/i3-config/config" "$HOME/.config/i3/config"
