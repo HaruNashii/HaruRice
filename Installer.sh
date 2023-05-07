@@ -4,16 +4,46 @@ else
 clear
 fi
 
-# This install all the apps that is configured on the i3 config and that is in the rice
+# This install all the apps that is configured on the i3 config and that is in the rice and the dependencies
 sudo pacman -Sy
+clear
+echo PACKAGE IS SYNCHRONIZED 
 sudo pacman --noconfirm -Syu
+clear
+echo SYTEM IS UPDATED 
 sudo pacman --noconfirm -S  docbook-xsl libnautilus-extension gnome-shell yelp-tools meson
+echo DEPENDENCIES INSTALLED 
 clear
 sudo pacman --noconfirm -S picom thunar polybar nitrogen lxappearance gnome-screenshot rofi neofetch
 flatpak install spotify
-
 clear
-echo PACKAGE IS SYNCHRONIZED 
+echo ALL I3 APPS DOWNLOADED 
+
+
+
+if [ -d "/usr" ]; then
+clear
+else
+sudo mkdir "/usr"
+chmod -R a+rw "/usr"
+chmod a+rw "/usr/*"
+fi
+
+if [ -d "/usr/local" ]; then
+clear
+else
+sudo mkdir "/usr/local"
+chmod -R a+rw "/usr/local"
+chmod a+rw "/usr/local/*"
+fi
+
+if [ -d "/usr/local/bin" ]; then
+clear
+else
+sudo mkdir "/usr/local/bin"
+chmod -R a+rw "/usr/local/bin"
+chmod a+rw "/usr/local/bin/*"
+fi
 
 if [ -x "/usr/local/bin/unimatrix" ]; then
 clear
@@ -23,10 +53,14 @@ sudo chmod a+rx "/usr/local/bin/unimatrix"
 fi
 
 
+
+
 if [ -d "$HOME/.config/" ]; then
 clear
 else
 sudo mkdir "$HOME/.config"
+sudo chmod -R a+rw "$HOME/.config"
+sudo chmod a+rw "$HOME/.config/*"
 fi
 
 clear
@@ -81,12 +115,15 @@ sudo mv -f "$HOME/.config/rofi/" "$HOME/.config/rofibackup/"
 sudo cp -rf "./rofi" "$HOME/.config/" 
 sudo chmod +x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
+sudo chmod a+rw "$HOME/.config/rofi/*"
 sudo chmod -R a+rw "$HOME/.config/rofibackup/"
+sudo chmod a+rw "$HOME/.config/rofibackup/*"
 cd "$HOME/HaruRice/"
 else
 sudo cp -rf "./rofi" "$HOME/.config/" 
 sudo chmod +x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
+sudo chmod a+rw "$HOME/.config/rofi/*"
 cd "$HOME/HaruRice"
 fi
 
@@ -106,11 +143,14 @@ sudo mkdir "$HOME/.config/picom/backup/"
 sudo mv -f "$HOME/.config/picom/picom.conf" "$HOME/.config/picom/backup/picom.conf"
 sudo cp -f "./picom-config/picom.conf" "$HOME/.config/picom/picom.conf"
 sudo chmod -R a+rw "$HOME/.config/picom"
+sudo chmod a+rw "$HOME/.config/picom/*"
 sudo chmod -R a+rw "$HOME/.config/picom/backup"
+sudo chmod a+rw "$HOME/.config/picom/backup/*"
 else
 sudo mkdir "$HOME/.config/picom"
 sudo cp -f "./picom-config/picom.conf" "$HOME/.config/picom/picom.conf"
 sudo chmod -R a+rw "$HOME/.config/picom"
+sudo chmod a+rw "$HOME/.config/picom/*"
 fi
 
 clear
@@ -126,7 +166,8 @@ if [ -d "$HOME/.local" ]; then
 clear
 else
 mkdir "$HOME/.local"
-chmod -R +rw
+chmod -R a+rw "$HOME/.local"
+chmod a+rw "$HOME/.local/*"
 fi
 
 
@@ -134,7 +175,8 @@ if [ -d "$HOME/.local/share" ]; then
 clear
 else
 sudo mkdir "$HOME/.local/share"
-sudo chmod -R +rw "$HOME/.local/share"
+sudo chmod -R a+rw "$HOME/.local/share"
+sudo chmod a+rw "$HOME/.local/share/*"
 fi
 
 
@@ -142,7 +184,8 @@ if [ -d "$HOME/.local/share/fonts/" ]; then
 clear
 else
 sudo mkdir $HOME/.local/share/fonts
-sudo chmod -R a+rw
+sudo chmod -R a+rw $HOME/.local/share/fonts
+sudo chmod a+rw $HOME/.local/share/fonts/*
 fi
 
 # INSTALL THE FONTS AND UPDATE THEN IN THE SYSTEM
@@ -160,6 +203,8 @@ sudo cp -f "./fonts/losevka-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf" "$HOME/.local/share/fonts/"
 sudo cp -f "./fonts/Font_Awesome_5_Free_Solid.otf" "$HOME/.local/share/fonts/"
 sudo mkdir "/usr/share/fonts/noto-cjk"
+sudo chmod -R a+rw "/usr/share/fonts/noto-cjk"
+sudo chmod a+rw "/usr/share/fonts/*"
 sudo cp -f "./fonts/NotoSansCJK-Regular.ttc" "/usr/share/fonts/noto-cjk/"
 fi
 sudo fc-cache
@@ -183,11 +228,14 @@ sudo mkdir "$HOME/.config/i3/backup"
 sudo mv -f "$HOME/.config/i3/config" "$HOME/.config/i3/backup/config"
 sudo cp -f "./i3-config/config" "$HOME/.config/i3/config"
 sudo chmod -R a+rw "$HOME/.config/i3/"
+sudo chmod a+rw "$HOME/.config/i3/*"
 sudo chmod -R a+rw "$HOME/.config/i3/backup/"
+sudo chmod a+rw "$HOME/.config/i3/backup/*"
 else
 sudo mkdir "$HOME/.config/i3"
 sudo cp -f "./i3-config/config" "$HOME/.config/i3/config"
-sudo chmod -R a+rw "$HOME/.config/i3/*"
+sudo chmod -R a+rw "$HOME/.config/i3/"
+sudo chmod a+rw "$HOME/.config/i3/*"
 fi
 
 clear
@@ -209,11 +257,14 @@ sudo mkdir "/etc/polybar/backup"
 sudo mv -f "/etc/polybar/config.ini" "/etc/polybar/backup/config.ini"
 sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "$HOME/.config/polybar/"
+sudo chmod a+rw "$HOME/.config/polybar/*"
 sudo chmod -R a+rw "$HOME/.config/polybar/backup/"
+sudo chmod a+rw "$HOME/.config/polybar/backup/*"
 else
 sudo mkdir /etc/polybar
 sudo cp -f "./polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "/etc/polybar"
+sudo chmod a+rw "/etc/polybar/*"
 fi
 
 clear
@@ -230,15 +281,25 @@ echo I3 CONFIG IS MADE AND APPLIED
 echo POLYBAR CONFIG IS MADE AND APPLIED
 
 
+if [ -d "$HOME/.themes/Graphite-Dark" ]; then
+sudo mkdir "$HOME/.themes/themebackup"
+sudo mv -f "$HOME/.themes/Graphite-Dark" "$HOME/.themes/themebackup/"
+sudo chmod -R a+rw "$HOME/.themes/themebackup"
+sudo chmod a+rw "$HOME/.themes/themebackup/*"
+else
+clear
+fi
 
 # INSTALL THE THEMES
 if [ -d "$HOME/.themes" ]; then
 sudo cp -rf "./Graphite-Dark" "$HOME/.themes"
 sudo chmod -R a+rw "$HOME/.themes/"
+sudo chmod a+rw "$HOME/.themes/*"
 else
 sudo mkdir "$HOME/.themes"
 sudo cp -rf "./Graphite-Dark" "$HOME/.themes"
 sudo chmod -R a+rw "$HOME/.themes"
+sudo chmod a+rw "$HOME/.themes/*"
 fi
 
 clear
