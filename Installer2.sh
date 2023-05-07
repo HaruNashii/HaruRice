@@ -25,24 +25,24 @@ if [ -d "/usr" ]; then
 clear
 else
 sudo mkdir "/usr"
-chmod -R a+rw "/usr"
-chmod a+rw "/usr/*"
+sudo chmod -R a+rw "/usr"
+sudo chmod a+rw "/usr/*"
 fi
 
 if [ -d "/usr/local" ]; then
 clear
 else
 sudo mkdir "/usr/local"
-chmod -R a+rw "/usr/local"
-chmod a+rw "/usr/local/*"
+sudo chmod -R a+rw "/usr/local"
+sudo chmod a+rw "/usr/local/*"
 fi
 
 if [ -d "/usr/local/bin" ]; then
 clear
 else
 sudo mkdir "/usr/local/bin"
-chmod -R a+rw "/usr/local/bin"
-chmod a+rw "/usr/local/bin/*"
+sudo chmod -R a+rw "/usr/local/bin"
+sudo chmod a+rw "/usr/local/bin/*"
 fi
 
 if [ -x "/usr/local/bin/unimatrix" ]; then
@@ -113,7 +113,7 @@ if [ -d "$HOME/.config/rofi/" ]; then
 sudo mkdir "$HOME/.config/rofibackup/"
 sudo mv -f "$HOME/.config/rofi/" "$HOME/.config/rofibackup/"
 sudo cp -rf "./rofi" "$HOME/.config/" 
-sudo chmod +x "$HOME/.config/rofi/launcher.sh"
+sudo chmod a+x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod a+rw "$HOME/.config/rofi/*"
 sudo chmod -R a+rw "$HOME/.config/rofibackup/"
@@ -121,7 +121,7 @@ sudo chmod a+rw "$HOME/.config/rofibackup/*"
 cd "$HOME/HaruRice/"
 else
 sudo cp -rf "./rofi" "$HOME/.config/" 
-sudo chmod +x "$HOME/.config/rofi/launcher.sh"
+sudo chmod a+x "$HOME/.config/rofi/launcher.sh"
 sudo chmod -R a+rw "$HOME/.config/rofi/"
 sudo chmod a+rw "$HOME/.config/rofi/*"
 cd "$HOME/HaruRice"
@@ -166,8 +166,8 @@ if [ -d "$HOME/.local" ]; then
 clear
 else
 mkdir "$HOME/.local"
-chmod -R a+rw "$HOME/.local"
-chmod a+rw "$HOME/.local/*"
+sudo chmod -R a+rw "$HOME/.local"
+sudo chmod a+rw "$HOME/.local/*"
 fi
 
 
