@@ -46,11 +46,11 @@ fi
 
 # EXPORT THE CONFIG OF THE FOR THE I3 FOLDER
 if [ -d "$HOME/.i3/" ]; then
-exec "$HOME/HaruRice/Scripts/i3configv2.sh"
+./Scripts/i3configv2.sh
 sudo chmod -R a+rw "$HOME/.config/i3"
 sudo chmod a+rw "$HOME/.config/i3/*"
 else
-exec "$HOME/HaruRice/Scripts/i3configv1.sh"
+./Scripts/i3configv1.sh
 sudo chmod -R a+rw "$HOME/.config/i3"
 sudo chmod a+rw "$HOME/.config/i3/*"
 fi
