@@ -10,7 +10,7 @@ if [ -d "$HOME/.config/rofi/" ]; then
 sudo mkdir "$HOME/.config/rofibackup/"
 sudo mv -f "$HOME/.config/rofi/" "$HOME/.config/rofibackup/"
 else
-ECHO OK
+echo OK
 fi
 
 
@@ -42,8 +42,7 @@ fi
 if [ -d "/etc/polybar/" ]; then
 sudo mkdir "/etc/polybar/backup"
 sudo mv -f "/etc/polybar/config.ini" "/etc/polybar/backup/config.ini"
-sudo chmod -R a+rw "$HOME/.config/polybar/backup/"
-sudo chmod a+rw "$HOME/.config/polybar/backup/*"
+sudo chmod -R a+rw "etc/polybar/backup/"
 else
 echo OK
 fi
