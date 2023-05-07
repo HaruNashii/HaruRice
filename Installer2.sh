@@ -286,6 +286,10 @@ makepkg
 sudo pacman --noconfirm -U gnome-terminal-transparency-3.46.8-1-x86_64.pkg.tar.zst
 cd "$HOME/HaruRice"
 
+# set the profile of the gnome-terminal for the profile that is in ("terminal-config")
+dconf load /org/gnome/terminal/legacy/profiles:/ < $HOME/HaruRice/terminal-config/gnome-terminal-profile.dconf
+echo TERMINAL PROFILE APPLIED
+
 sudo pacman --noconfirm -S gvfs
 
 clear
