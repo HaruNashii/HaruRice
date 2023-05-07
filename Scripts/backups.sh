@@ -1,9 +1,14 @@
 # MAKE A BACKUP OF YOUR ROFI CONFIGURATION
+if [ -d "$HOME/.config/rofibackup" ]; then
+sudo rm -rf "$HOME/.config/rofibackup"
+else
+echo OK
+fi
+
+
 if [ -d "$HOME/.config/rofi/" ]; then
 sudo mkdir "$HOME/.config/rofibackup/"
 sudo mv -f "$HOME/.config/rofi/" "$HOME/.config/rofibackup/"
-sudo chmod -R a+rw "$HOME/.config/rofibackup/"
-sudo chmod a+rw "$HOME/.config/rofibackup/*"
 else
 clear
 fi
@@ -35,11 +40,16 @@ fi
 
 
 # MAKE A BACKUP IN BASE OF WHERE IS THE I3 CONFIG FOLDER 
+if [ -d "$HOME/.i3/backup" ]; then
+sudo rm -rf "$HOME/.i3/backup"
+else
+echo OK
+fi
+
 if [ -d "$HOME/.i3" ]; then
 sudo mkdir "$HOME/.i3/backup"
 sudo mv -f "$HOME/.i3/config" "$HOME/.i3/backup/config"
 sudo chmod -R a+rw "$HOME/.i3/backup/"
-sudo chmod a+rw "$HOME/.i3/backup/*"
 else
 clear
 fi
