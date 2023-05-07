@@ -290,7 +290,7 @@ cd "$HOME/HaruRice"
 
 # set the profile of the gnome-terminal for the profile that is in ("terminal-config")
 dconf load /org/gnome/terminal/legacy/profiles:/ < $HOME/HaruRice/terminal-config/gnome-terminal-profile.dconf
-echo terminal profile applied
+echo TERMINAL PROFILE APPLIED
 
 
 sudo pacman --noconfirm -S gvfs
