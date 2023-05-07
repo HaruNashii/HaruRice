@@ -1,0 +1,11 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+bold-color='rgb(87,87,87)'
+bold-color-same-as-fg=false
+bold-is-bright=true
+foreground-color='rgb(255,255,255)'
+palette=['rgb(87,87,87)', 'rgb(87,87,87)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(87,87,87)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)', 'rgb(255,255,255)']
+scrollbar-policy='never'
+use-theme-colors=false
+use-transparent-background=true
+visible-name='Monochrome'
