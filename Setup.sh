@@ -1,3 +1,4 @@
+# ADD PERMISSION FOR THE SCRIPTS TO RUN
 sudo chmod a+rwx ./Scripts/dependencies.sh
 sudo chmod a+rwx ./Scripts/backups.sh
 sudo chmod a+rwx ./Scripts/configs.sh
