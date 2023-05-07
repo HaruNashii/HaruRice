@@ -10,8 +10,6 @@ WILL NOT BE INSTALLED BECAUSE IS TO MANY ARCHIVE, YOU CAN GET THE ICONS BY HERE:
 ```https://www.gnome-look.org/p/1166289/```
 
 # Credits
-
-
 **This Script Uses the Polybar-Spotify-Module made by
  @Mihirlad55 / Mihir lad**
 
@@ -32,8 +30,7 @@ https://github.com/xorg62
 https://github.com/xorg62/tty-clock
 
 
-# This Rice will install or reinstall if yo already have:
-
+# This Rice will install or reinstall if you already have:
 - firefoz
 - picom
 - gnome-terminal-transparency
@@ -45,16 +42,22 @@ https://github.com/xorg62/tty-clock
 - polybar
 - lxapperance
 - GTK Graphite Dark Theme
-- Thunar
-- gvfs (optional dependency or thunar icons)
+- ranger
 - spotify (from flatpak, it's work better with the spotify-module for me)
 - polybar-spotify-module made by @Mihirlad55
 - rofi
 - rofi themes and config made by @adi1090x
 - nitrogen
 
-# Backups
+**Dependencies**
 
+- dbus
+- base-devel 
+- flatpak
+
+
+
+# Backups
 **all your config files should be backup in the same folder with the name backup**
 
 - rofi (~/.config/rofibackup)
@@ -62,9 +65,9 @@ https://github.com/xorg62/tty-clock
 - i3 (~/.config/i3/backup)
 - picom (~/.config/picom/backup)
 
-if your use the installer2.sh
 
-the i3 config backup will be in (~/.i3/backup)
+
+if your i3 config file is on the home folder the i3 config backup will be in (~/.i3/backup)
 
 # Requirements
 
@@ -72,12 +75,7 @@ the i3 config backup will be in (~/.i3/backup)
 
 **this scripts uses the "GNU Core Utilities" such as "mv" "cp" "mkdir" "chmod" "make" if your distro don't have it will not work** 
 
-**you will need the "GIT" "base-devel" "flatpak" to clone the repository, compile the tyy-clock, install spotify and install picom dependency"**
-
 **you can install it with the following command in your terminal**
-
-```sudo pacman -S git base-devel dbus flatpak```
-
 
 
 
@@ -85,11 +83,11 @@ the i3 config backup will be in (~/.i3/backup)
 
 **THIS SCRIPT WILL NOT APPLY THE THEME AND THE WALLPAPER THIS YOU WILL NEED TO MAKE BY THE NITROGEN AND THE LXAPPERANCE THAT IS DOWNLOADED BY THE SCRIPT**
 
-**THE INSTALLER.SH IS THE NORMAL ONE JUST USE THE INSTALLER2.SH IF YOUR I3 FOLDER IS IN YOUR $HOME FOLDER (like in manjaro i3)**
-
+**IF YOU ALREADY HAVE GIT YOU DON'T NEED THE "sudo pacman -S git"**
 
 **Open the terminal and run these commands**
 
+```sudo pacman -S git```
 
 ```cd ~```
 
@@ -97,8 +95,8 @@ the i3 config backup will be in (~/.i3/backup)
 
 ```cd HaruRice```
 
-```sudo chmod +x Installer.sh```
+```sudo chmod +x Setup.sh```
 
-```./Installer.sh```
+```./Setup.sh```
 
 
