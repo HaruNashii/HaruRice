@@ -76,13 +76,13 @@ sudo chmod a+rw "/etc"
 sudo chmod a+rw "/etc/*" 
 fi
 if [ -d "/etc/polybar" ]; then
-sudo cp -rf "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
+sudo cp "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "$HOME/.config/polybar/"
 sudo chmod a+rw "$HOME/.config/polybar/*"
 sudo chmod a+rw /etc/polybar/config.ini
 else
 sudo mkdir /etc/polybar
-sudo cp -f "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
+sudo cp "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
 sudo chmod -R a+rw "/etc/polybar"
 sudo chmod a+rw "/etc/polybar/*"
 sudo chmod a+rw /etc/polybar/config.ini
