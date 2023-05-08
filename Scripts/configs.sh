@@ -56,24 +56,29 @@ sudo chmod a+rw "$HOME/.config/i3/*"
 fi
 
 
+
 # CONFIGURE THE POLYBAR WITH A PERSONAL SCRIPT
 sudo mkdir "$HOME/.HaruScripts"
 sudo cp -rf "$HOME/HaruRice/Scripts/spotifyscript.sh" "$HOME/.HaruScripts"
 sudo cp -rf "$HOME/HaruRice/Scripts/spotifyscript1.sh" "$HOME/.HaruScripts"
 sudo cp -rf "$HOME/HaruRice/Scripts/spotifyscript2.sh" "$HOME/.HaruScripts"
 sudo chmod a+rwx $HOME/.HaruScripts/*
-else
 
-fi
+
+
+# SET THE PROFILE OF THE GNOME-TERMINAL FOR THE PROFILE THAT IS IN ("terminal-config")
+dconf load /org/gnome/terminal/legacy/profiles:/ < $HOME/HaruRice/terminal-config/gnome-terminal-profile.dconf
+
+
 
 # CHECK IF THE FOLDER FOR THE INSTALLATION EXIST THEN EXPORT THE RICE CONFIG TO THE FOLDER
 if [ -d "/etc" ]; then
 clear
 else
 sudo mkdir "/etc"
-sudo chmod -R a+rw "/etc" 
+sudo chmod -R a+rw "/etc"
 sudo chmod a+rw "/etc"
-sudo chmod a+rw "/etc/*" 
+sudo chmod a+rw "/etc/*"
 fi
 
 if [ -d "/etc/polybar" ]; then
@@ -82,8 +87,5 @@ else
 sudo mkdir /etc/polybar
 fi
 
-sudo cp -f $HOME/HaruRice/polybar-config/config.ini /etc/polybar/
-sudo chmod a+rw /etc/polybar/config.ini
-
-# SET THE PROFILE OF THE GNOME-TERMINAL FOR THE PROFILE THAT IS IN ("terminal-config")
-dconf load /org/gnome/terminal/legacy/profiles:/ < $HOME/HaruRice/terminal-config/gnome-terminal-profile.dconf
+sudo cp -f "$HOME/HaruRice/polybar-config/config.ini" "/etc/polybar/config.ini"
+sudo chmod a+rw "/etc/polybar/config.ini"
