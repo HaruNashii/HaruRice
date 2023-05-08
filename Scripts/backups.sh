@@ -39,10 +39,10 @@ else
 echo OK
 fi
 
-if [ -d "/etc/polybar/" ]; then
+if [ -f "/etc/polybar/config.ini" ]; then
 sudo mkdir "/etc/polybar/backup"
-sudo mv -f "/etc/polybar/config.ini" "/etc/polybar/backup/config.ini"
-sudo chmod -R a+rw "etc/polybar/backup/"
+sudo mv "/etc/polybar/config.ini" "/etc/polybar/backup/config.ini"
+sudo chmod a+rw "etc/polybar/backup/config.ini"
 else
 echo OK
 fi
