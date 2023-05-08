@@ -75,16 +75,15 @@ sudo chmod -R a+rw "/etc"
 sudo chmod a+rw "/etc"
 sudo chmod a+rw "/etc/*" 
 fi
+
 if [ -d "/etc/polybar" ]; then
-sudo cp -f $HOME/HaruRice/polybar-config/config.ini /etc/polybar/
-sudo chmod a+rw /etc/polybar/config.ini
+clear
 else
 sudo mkdir /etc/polybar
-sudo cp -f $HOME/HaruRice/polybar-config/config.ini /etc/polybar/
-sudo chmod a+rw /etc/polybar/config.ini
 fi
 
-
+sudo cp -f $HOME/HaruRice/polybar-config/config.ini /etc/polybar/
+sudo chmod a+rw /etc/polybar/config.ini
 
 # SET THE PROFILE OF THE GNOME-TERMINAL FOR THE PROFILE THAT IS IN ("terminal-config")
 dconf load /org/gnome/terminal/legacy/profiles:/ < $HOME/HaruRice/terminal-config/gnome-terminal-profile.dconf
