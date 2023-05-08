@@ -56,6 +56,16 @@ sudo chmod a+rw "$HOME/.config/i3/*"
 fi
 
 
+# CONFIGURE THE POLYBAR WITH A PERSONAL SCRIPT
+sudo mkdir "$HOME/.HaruScripts"
+sudo cp -rf "$HOME/HaruRice/Scripts/spotifyscript.sh" "$HOME/.HaruScripts"
+sudo cp -rf "$HOME/HaruRice/Scripts/spotifyscript1.sh" "$HOME/.HaruScripts"
+sudo cp -rf "$HOME/HaruRice/Scripts/spotifyscript2.sh" "$HOME/.HaruScripts"
+sudo chmod a+rwx $HOME/.HaruScripts/*
+else
+
+fi
+
 # CHECK IF THE FOLDER FOR THE INSTALLATION EXIST THEN EXPORT THE RICE CONFIG TO THE FOLDER
 if [ -d "/etc" ]; then
 clear
