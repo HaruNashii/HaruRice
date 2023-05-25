@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 # CHECK IF THE FOLDERS OF THE FONTS EXIST, IF DON'T EXIST WILL CREATE.
 if [ -d "$HOME/.local" ]; then
