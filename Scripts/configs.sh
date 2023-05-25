@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # INSTALL THE ROFI CONFIGURATION
 if [ -d "$HOME/.config/rofi/" ]; then
 sudo cp -rf "$HOME/HaruRice/rofi" "$HOME/.config/rofi" 
