@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PROGRAM_NAME="spotify"
 #NEXT
 if pgrep $PROGRAM_NAME >/dev/null; then
