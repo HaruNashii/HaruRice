@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 PROGRAM_NAME="spotify"
 
