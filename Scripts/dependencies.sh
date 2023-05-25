@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # REMOVE THE BLOCK OF THE PACMAN IF THE BLOCK EXIST
 if [ -f "/var/lib/pacman/db.lck" ]; then
 sudo rm "/var/lib/pacman/db.lck"
