@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ADD PERMISSION FOR THE SCRIPTS TO RUN
 sudo chmod a+rwx $HOME/HaruRice/Scripts/i3configv1.sh
 sudo chmod a+rwx $HOME/HaruRice/Scripts/i3configv2.sh
