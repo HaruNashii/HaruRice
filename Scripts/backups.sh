@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # MAKE A BACKUP OF YOUR ROFI CONFIGURATION
 if [ -d "$HOME/.config/rofibackup" ]; then
 sudo rm -rf "$HOME/.config/rofibackup"
